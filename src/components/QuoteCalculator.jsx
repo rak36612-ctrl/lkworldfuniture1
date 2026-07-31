@@ -67,18 +67,7 @@ Please share your best factory quote and catalog details.`;
         </div>
 
         {/* Calculator Main Box */}
-        <div style={{
-          maxWidth: '1000px',
-          margin: '0 auto',
-          background: '#FFFFFF',
-          borderRadius: '32px',
-          padding: '2.5rem',
-          boxShadow: 'var(--shadow-lg)',
-          border: '1px solid rgba(24, 59, 53, 0.08)',
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-          gap: '2.5rem'
-        }}>
+        <div className="quote-calculator-box">
           
           {/* Controls Column */}
           <div>
@@ -187,16 +176,7 @@ Please share your best factory quote and catalog details.`;
           </div>
 
           {/* Results Column */}
-          <div style={{
-            background: 'var(--color-primary-dark)',
-            color: '#FFFFFF',
-            borderRadius: '24px',
-            padding: '2rem',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-between',
-            boxShadow: '0 12px 30px rgba(16, 40, 36, 0.25)'
-          }}>
+          <div className="quote-results">
             <div>
               <div style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.15em', color: 'var(--color-gold)', marginBottom: '0.5rem', fontWeight: '700' }}>
                 ESTIMATED SUMMARY
