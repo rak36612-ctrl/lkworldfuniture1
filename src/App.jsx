@@ -9,7 +9,6 @@ import CraftsmanshipCycle from './components/CraftsmanshipCycle';
 import CatalogGallery from './components/CatalogGallery';
 import VideoShowcase from './components/VideoShowcase';
 import InteractiveCatalog from './components/InteractiveCatalog';
-import QuoteCalculator from './components/QuoteCalculator';
 import ContactAndLocation from './components/ContactAndLocation';
 import WhatsAppWidget from './components/WhatsAppWidget';
 import Footer from './components/Footer';
@@ -45,7 +44,6 @@ export default function App() {
 
         {/* Full Catalogue Gallery — all 18 PDF pages at 4K */}
         <CatalogGallery />
-        <QuoteCalculator />
         <ContactAndLocation />
       </main>
 
