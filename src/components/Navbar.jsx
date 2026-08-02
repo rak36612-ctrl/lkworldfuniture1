@@ -68,7 +68,7 @@ export default function Navbar({ onOpenQuoteModal }) {
           <a href="#solutions" className="nav-link">SOLUTIONS</a>
           <a href="#craftsmanship" className="nav-link">CRAFTSMANSHIP</a>
           <a href="#workshop" className="nav-link">VIDEO TOUR</a>
-          <a href="#catalog-gallery" className="nav-link">CATALOGUE</a>
+          
           <a href="#contact" className="nav-link">LOCATION</a>
         </nav>
 
@@ -123,7 +123,7 @@ export default function Navbar({ onOpenQuoteModal }) {
           <a href="#solutions" onClick={() => setMobileMenuOpen(false)} className="mobile-nav-link">SOLUTIONS</a>
           <a href="#craftsmanship" onClick={() => setMobileMenuOpen(false)} className="mobile-nav-link">CRAFTSMANSHIP</a>
           <a href="#workshop" onClick={() => setMobileMenuOpen(false)} className="mobile-nav-link">VIDEO TOUR</a>
-          <a href="#catalog-gallery" onClick={() => setMobileMenuOpen(false)} className="mobile-nav-link">CATALOGUE</a>
+          
           <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="mobile-nav-link">LOCATION</a>
 
           <div style={{ paddingTop: '1rem', borderTop: '1px solid #EAEAEA', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>

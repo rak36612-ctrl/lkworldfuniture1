@@ -76,7 +76,7 @@ export default function Footer() {
               <li><a href="#solutions" style={{ color: '#A0B4B0', transition: 'color 0.2s' }}>Quote Estimator</a></li>
               <li><a href="#craftsmanship" style={{ color: '#A0B4B0', transition: 'color 0.2s' }}>Craftsmanship</a></li>
               <li><a href="#workshop" style={{ color: '#A0B4B0', transition: 'color 0.2s' }}>Workshop Video</a></li>
-              <li><a href="#catalog-gallery" style={{ color: '#A0B4B0', transition: 'color 0.2s' }}>Full Catalogue Gallery</a></li>
+              
               <li><a href="#contact" style={{ color: '#A0B4B0', transition: 'color 0.2s' }}>Location & Contact</a></li>
             </ul>
           </div>

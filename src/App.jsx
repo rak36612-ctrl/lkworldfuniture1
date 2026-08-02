@@ -7,7 +7,6 @@ import Philosophy from './components/Philosophy';
 import CraftsmanshipGrid from './components/CraftsmanshipGrid';
 import CraftsmanshipCycle from './components/CraftsmanshipCycle';
 import VideoShowcase from './components/VideoShowcase';
-import InteractiveCatalog from './components/InteractiveCatalog';
 import ContactAndLocation from './components/ContactAndLocation';
 import WhatsAppWidget from './components/WhatsAppWidget';
 import Footer from './components/Footer';
@@ -39,9 +38,6 @@ export default function App() {
         <CraftsmanshipCycle />
 
         <VideoShowcase />
-        <InteractiveCatalog onOpenQuoteModal={() => setQuoteModalOpen(true)} />
-
-        {/* Full Catalogue Gallery — all 18 PDF pages at 4K */}
         <ContactAndLocation />
       </main>
 
