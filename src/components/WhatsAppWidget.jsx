@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
-import { MessageCircle, X } from 'lucide-react';
+import React from 'react';
+import { MessageCircle, BookOpen } from 'lucide-react';
 
 export default function WhatsAppWidget() {
-  const [tooltipOpen, setTooltipOpen] = useState(true);
-
   return (
     <div style={{
       position: 'fixed',
@@ -15,39 +13,29 @@ export default function WhatsAppWidget() {
       alignItems: 'flex-end',
       gap: '0.75rem'
     }}>
-      
-      {/* Tooltip Popup matching Promax Floating Widget style */}
-      {tooltipOpen && (
-        <div style={{
-          background: '#FFFFFF',
-          padding: '0.85rem 1.15rem',
-          borderRadius: '16px',
-          boxShadow: '0 10px 30px rgba(0,0,0,0.15)',
-          border: '1px solid rgba(37, 211, 102, 0.3)',
-          display: 'flex',
+      {/* Catalogue shortcut button (above WhatsApp) */}
+      <a
+        href="/LK Furnitures-2024.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Open Catalogue"
+        style={{
+          display: 'inline-flex',
           alignItems: 'center',
-          gap: '0.75rem',
-          maxWidth: '280px',
-          animation: 'fadeInUp 0.3s ease'
-        }}>
-          <div>
-            <div style={{ fontSize: '0.82rem', fontWeight: '700', color: 'var(--color-primary-dark)' }}>
-              Need Custom Furniture?
-            </div>
-            <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>
-              Chat with our Bengaluru team now!
-            </div>
-          </div>
-
-          <button 
-            onClick={() => setTooltipOpen(false)}
-            style={{ background: 'none', color: '#999', padding: '0.2rem', cursor: 'pointer' }}
-            aria-label="Close WhatsApp Callout"
-          >
-            <X size={16} />
-          </button>
-        </div>
-      )}
+          gap: '0.5rem',
+          padding: '0.5rem 0.9rem',
+          borderRadius: '999px',
+          background: 'var(--color-primary)',
+          color: '#fff',
+          boxShadow: '0 8px 20px rgba(0,0,0,0.12)',
+          textDecoration: 'none',
+          fontWeight: 700,
+          fontSize: '0.95rem'
+        }}
+      >
+        <BookOpen size={18} color="#FFFFFF" />
+        <span>Catalogue</span>
+      </a>
 
       {/* Floating Green Circle Action Button */}
       <a 
@@ -71,9 +59,7 @@ export default function WhatsAppWidget() {
       >
         <MessageCircle size={34} fill="#FFFFFF" color="#25D366" />
       </a>
-
-      {/* Small label for accessibility and visibility on narrow screens */}
-      <div className="whatsapp-label" style={{ fontSize: '0.85rem', color: 'var(--color-primary-dark)', background: 'transparent', marginTop: '0.2rem' }} aria-hidden="true">Chat</div>
+    </div>
     </div>
   );
 }
