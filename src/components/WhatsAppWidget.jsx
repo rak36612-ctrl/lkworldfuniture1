@@ -60,6 +60,5 @@ export default function WhatsAppWidget() {
         <MessageCircle size={34} fill="#FFFFFF" color="#25D366" />
       </a>
     </div>
-    </div>
   );
 }
