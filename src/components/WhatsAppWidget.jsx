@@ -55,7 +55,7 @@ export default function WhatsAppWidget() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Direct WhatsApp Chat"
-        className="pulse-whatsapp"
+        className="pulse-whatsapp whatsapp-float"
         style={{
           width: '64px',
           height: '64px',
@@ -71,6 +71,9 @@ export default function WhatsAppWidget() {
       >
         <MessageCircle size={34} fill="#FFFFFF" color="#25D366" />
       </a>
+
+      {/* Small label for accessibility and visibility on narrow screens */}
+      <div className="whatsapp-label" style={{ fontSize: '0.85rem', color: 'var(--color-primary-dark)', background: 'transparent', marginTop: '0.2rem' }} aria-hidden="true">Chat</div>
     </div>
   );
 }

@@ -318,3 +318,21 @@ button {
     font-size: 0.9rem;
   }
 }
+
+/* WhatsApp widget small-screen tweaks */
+.whatsapp-float {
+  width: 56px !important;
+  height: 56px !important;
+}
+
+@media (max-width: 480px) {
+  .whatsapp-float {
+    right: 1rem !important;
+    bottom: 1rem !important;
+  }
+
+  .whatsapp-label {
+    display: block;
+    margin-right: 0.25rem;
+  }
+}

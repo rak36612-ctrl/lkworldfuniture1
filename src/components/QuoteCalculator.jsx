@@ -212,15 +212,27 @@ Please share your best factory quote and catalog details.`;
                 <div style={{ fontSize: '0.75rem', color: '#809B96' }}>*Excludes GST & transportation</div>
               </div>
 
-              <a 
-                href={`https://wa.me/918884487020?text=${encodeURIComponent(whatsappMessage)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-gold"
-                style={{ width: '100%', justifyContent: 'center', textAlign: 'center' }}
-              >
-                <MessageCircle size={18} /> SEND SPEC TO WHATSAPP
-              </a>
+              <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
+                <a 
+                  href={`https://wa.me/918884487020?text=${encodeURIComponent(whatsappMessage)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-gold"
+                  style={{ flex: 1, justifyContent: 'center', textAlign: 'center', display: 'inline-flex', alignItems: 'center', gap: '0.6rem' }}
+                >
+                  <MessageCircle size={18} /> SEND SPEC TO WHATSAPP
+                </a>
+
+                <a
+                  href="/catalogue.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-outline"
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: '0.6rem', padding: '0.7rem 1rem' }}
+                >
+                  View Catalogue
+                </a>
+              </div>
             </div>
 
           </div>
