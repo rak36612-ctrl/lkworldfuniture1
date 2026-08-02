@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import Philosophy from './components/Philosophy';
 import CraftsmanshipGrid from './components/CraftsmanshipGrid';
 import CraftsmanshipCycle from './components/CraftsmanshipCycle';
+import CatalogGallery from './components/CatalogGallery';
 import VideoShowcase from './components/VideoShowcase';
 import InteractiveCatalog from './components/InteractiveCatalog';
 import QuoteCalculator from './components/QuoteCalculator';
@@ -41,6 +42,9 @@ export default function App() {
 
         <VideoShowcase />
         <InteractiveCatalog onOpenQuoteModal={() => setQuoteModalOpen(true)} />
+
+        {/* Full Catalogue Gallery — all 18 PDF pages at 4K */}
+        <CatalogGallery />
         <QuoteCalculator />
         <ContactAndLocation />
       </main>

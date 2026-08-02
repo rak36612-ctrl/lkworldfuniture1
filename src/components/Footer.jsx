@@ -19,8 +19,25 @@ export default function Footer() {
           
           {/* Brand Info */}
           <div>
-            <div style={{ fontFamily: 'var(--font-heading)', fontWeight: '800', fontSize: '1.4rem', color: '#FFFFFF', marginBottom: '0.85rem' }}>
-              LK FURNITURE<span style={{ color: 'var(--color-gold)' }}> WORLD1</span>
+            {/* Logo + Brand name */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
+              <img
+                src="/images/lk_logo.png"
+                alt="LK Furniture World1 Logo"
+                style={{
+                  width: '48px',
+                  height: '48px',
+                  objectFit: 'contain',
+                  filter: 'drop-shadow(0 0 10px rgba(197,160,117,0.5))',
+                  flexShrink: 0,
+                }}
+              />
+              <div style={{ fontFamily: 'var(--font-heading)', fontWeight: '800', fontSize: 'clamp(1rem, 3.5vw, 1.3rem)', color: '#FFFFFF', lineHeight: 1.2 }}>
+                LK FURNITURE<span style={{ color: 'var(--color-gold)' }}> WORLD1</span>
+                <div style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.45)', fontWeight: '600', marginTop: '0.15rem' }}>
+                  The Custom Destination
+                </div>
+              </div>
             </div>
             <p style={{ fontSize: '0.9rem', lineHeight: 1.6, marginBottom: '1.5rem', color: '#A0B4B0' }}>
               Affordable commercial & residential custom furniture. Engineered for perpetual comfort, durability, and luxury aesthetics in Bengaluru.
@@ -59,6 +76,7 @@ export default function Footer() {
               <li><a href="#solutions" style={{ color: '#A0B4B0', transition: 'color 0.2s' }}>Quote Estimator</a></li>
               <li><a href="#craftsmanship" style={{ color: '#A0B4B0', transition: 'color 0.2s' }}>Craftsmanship</a></li>
               <li><a href="#workshop" style={{ color: '#A0B4B0', transition: 'color 0.2s' }}>Workshop Video</a></li>
+              <li><a href="#catalog-gallery" style={{ color: '#A0B4B0', transition: 'color 0.2s' }}>Full Catalogue Gallery</a></li>
               <li><a href="#contact" style={{ color: '#A0B4B0', transition: 'color 0.2s' }}>Location & Contact</a></li>
             </ul>
           </div>

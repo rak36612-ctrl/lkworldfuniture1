@@ -146,6 +146,53 @@ export default function HeroCarousel() {
         }}
       />
 
+      {/* LK Logo watermark — top-left corner over all slides */}
+      <div style={{
+        position: 'absolute',
+        top: 'clamp(4.5rem, 12vw, 6.5rem)',
+        left: 'clamp(1rem, 4vw, 2.5rem)',
+        zIndex: 8,
+        display: 'flex',
+        alignItems: 'center',
+        gap: 'clamp(0.4rem, 1.5vw, 0.75rem)',
+        opacity: 0.95,
+        pointerEvents: 'none',
+      }}>
+        <img
+          src="/images/lk_logo.png"
+          alt="LK Furniture World1"
+          style={{
+            width: 'clamp(36px, 9vw, 56px)',
+            height: 'clamp(36px, 9vw, 56px)',
+            objectFit: 'contain',
+            filter: 'drop-shadow(0 2px 10px rgba(197,160,117,0.5))',
+            flexShrink: 0,
+          }}
+        />
+        <div>
+          <div style={{
+            fontFamily: 'var(--font-heading)',
+            fontWeight: '900',
+            fontSize: 'clamp(0.75rem, 3vw, 1.1rem)',
+            color: '#FFFFFF',
+            lineHeight: 1.1,
+            letterSpacing: '-0.01em',
+            textShadow: '0 1px 6px rgba(0,0,0,0.4)',
+          }}>
+            LK FURNITURE<span style={{ color: '#C5A075' }}> WORLD1</span>
+          </div>
+          <div style={{
+            fontSize: 'clamp(0.52rem, 1.6vw, 0.65rem)',
+            letterSpacing: '0.18em',
+            textTransform: 'uppercase',
+            color: 'rgba(255,255,255,0.6)',
+            fontWeight: '600',
+          }}>
+            The Custom Destination
+          </div>
+        </div>
+      </div>
+
       {/* Slide Copy — bottom-anchored for mobile readability */}
       <div
         style={{

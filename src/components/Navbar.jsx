@@ -28,30 +28,31 @@ export default function Navbar({ onOpenQuoteModal }) {
     }}>
       <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         
-        {/* Logo matching Promax template style */}
-        <a href="#carousel-hero" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none' }}>
-          <div style={{
-            width: '42px',
-            height: '42px',
-            background: 'var(--color-primary)',
-            borderRadius: '12px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            boxShadow: '0 4px 12px rgba(24, 59, 53, 0.2)'
-          }}>
-            <span style={{ color: '#C5A075', fontWeight: '800', fontSize: '1.25rem', fontFamily: 'var(--font-heading)' }}>LK</span>
-          </div>
+        {/* Real LK Logo */}
+        <a href="#carousel-hero" style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', textDecoration: 'none' }}>
+          {/* Gold LK monogram logo image */}
+          <img
+            src="/images/lk_logo.png"
+            alt="LK Furniture World1 Logo"
+            style={{
+              width: 'clamp(36px, 8vw, 46px)',
+              height: 'clamp(36px, 8vw, 46px)',
+              objectFit: 'contain',
+              display: 'block',
+              filter: 'drop-shadow(0 2px 8px rgba(197,160,117,0.35))',
+              flexShrink: 0,
+            }}
+          />
           <div>
             <div style={{ 
               fontFamily: 'var(--font-heading)', 
               fontWeight: '800', 
-              fontSize: '1.2rem', 
+              fontSize: 'clamp(0.9rem, 3.5vw, 1.15rem)', 
               color: 'var(--color-primary-dark)',
               lineHeight: 1.1,
               letterSpacing: '-0.02em'
             }}>
-              LK FURNITURE<span style={{ color: 'var(--color-gold)' }}> WORLD1</span><span style={{ fontSize: '0.65rem', verticalAlign: 'super', color: 'var(--color-text-muted)' }}>™</span>
+              LK FURNITURE<span style={{ color: 'var(--color-gold)' }}> WORLD1</span><span style={{ fontSize: '0.6rem', verticalAlign: 'super', color: 'var(--color-text-muted)' }}>™</span>
             </div>
             <div style={{ fontSize: '0.68rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--color-text-muted)', fontWeight: '600' }}>
               The Custom Destination
@@ -67,6 +68,7 @@ export default function Navbar({ onOpenQuoteModal }) {
           <a href="#solutions" className="nav-link">SOLUTIONS</a>
           <a href="#craftsmanship" className="nav-link">CRAFTSMANSHIP</a>
           <a href="#workshop" className="nav-link">VIDEO TOUR</a>
+          <a href="#catalog-gallery" className="nav-link">CATALOGUE</a>
           <a href="#contact" className="nav-link">LOCATION</a>
         </nav>
 
@@ -121,6 +123,7 @@ export default function Navbar({ onOpenQuoteModal }) {
           <a href="#solutions" onClick={() => setMobileMenuOpen(false)} className="mobile-nav-link">SOLUTIONS</a>
           <a href="#craftsmanship" onClick={() => setMobileMenuOpen(false)} className="mobile-nav-link">CRAFTSMANSHIP</a>
           <a href="#workshop" onClick={() => setMobileMenuOpen(false)} className="mobile-nav-link">VIDEO TOUR</a>
+          <a href="#catalog-gallery" onClick={() => setMobileMenuOpen(false)} className="mobile-nav-link">CATALOGUE</a>
           <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="mobile-nav-link">LOCATION</a>
 
           <div style={{ paddingTop: '1rem', borderTop: '1px solid #EAEAEA', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
