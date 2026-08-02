@@ -15,7 +15,7 @@ export default function WhatsAppWidget() {
     }}>
       {/* Catalogue shortcut button (above WhatsApp) */}
       <a
-        href="/LK Furnitures-2024.pdf"
+        href="/catalogue.pdf"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Open Catalogue"
