@@ -1,117 +1,182 @@
 import React, { useEffect, useState } from 'react';
 
 export default function Preloader({ onLoaded }) {
-  const [percent, setPercent] = useState(0);
-  const [isFading, setIsFading] = useState(false);
+  const [isExit, setIsExit] = useState(false);
+  const [isMounted, setIsMounted] = useState(true);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setPercent((prev) => {
-        if (prev >= 100) {
-          clearInterval(interval);
-          setTimeout(() => {
-            setIsFading(true);
-            setTimeout(() => {
-              if (onLoaded) onLoaded();
-            }, 700);
-          }, 300);
-          return 100;
-        }
-        return Math.min(prev + Math.floor(Math.random() * 8) + 4, 100);
-      });
-    }, 40);
-    return () => clearInterval(interval);
+    // Elegant 1.3s timer for a smooth, non-intrusive brand entrance
+    const timer = setTimeout(() => {
+      setIsExit(true);
+      setTimeout(() => {
+        setIsMounted(false);
+        if (onLoaded) onLoaded();
+      }, 650); // duration of smooth slide/fade exit
+    }, 1300);
+
+    return () => clearTimeout(timer);
   }, [onLoaded]);
 
-  return (
-    <div className={`preloader-overlay ${isFading ? 'hidden' : ''}`}>
-      <div style={{ textAlign: 'center', padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  if (!isMounted) return null;
 
-        {/* Real gold LK logo — centred, glowing */}
-        <div style={{
-          width: 'clamp(90px, 20vw, 120px)',
-          height: 'clamp(90px, 20vw, 120px)',
-          marginBottom: '1.5rem',
-          position: 'relative',
+  return (
+    <div
+      style={{
+        position: 'fixed',
+        inset: 0,
+        zIndex: 999999,
+        background: '#0C1715',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        flexDirection: 'column',
+        opacity: isExit ? 0 : 1,
+        transform: isExit ? 'translateY(-12px)' : 'translateY(0)',
+        transition: 'opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1), transform 0.65s cubic-bezier(0.4, 0, 0.2, 1)',
+        pointerEvents: isExit ? 'none' : 'auto',
+      }}
+    >
+      <div
+        style={{
+          textAlign: 'center',
+          padding: '2rem',
           display: 'flex',
+          flexDirection: 'column',
           alignItems: 'center',
-          justifyContent: 'center',
-        }}>
-          {/* Glow ring behind logo */}
-          <div style={{
-            position: 'absolute',
-            inset: '-10px',
-            borderRadius: '50%',
-            background: 'radial-gradient(circle, rgba(197,160,117,0.25) 0%, transparent 70%)',
-          }} />
+          maxWidth: '420px',
+        }}
+      >
+        {/* Luxury Gold Logo Container */}
+        <div
+          style={{
+            position: 'relative',
+            width: 'clamp(90px, 22vw, 120px)',
+            height: 'clamp(90px, 22vw, 120px)',
+            marginBottom: '1.75rem',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            animation: 'introScale 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+          }}
+        >
+          {/* Subtle Ambient Radial Gold Glow */}
+          <div
+            style={{
+              position: 'absolute',
+              inset: '-15px',
+              borderRadius: '50%',
+              background: 'radial-gradient(circle, rgba(197, 160, 117, 0.35) 0%, transparent 70%)',
+              animation: 'glowPulse 2s ease-in-out infinite alternate',
+            }}
+          />
+
           <img
-            src="/images/lk_logo.png"
+            src="/images/Final_Logo.png"
             alt="LK Furniture World1"
             style={{
               width: '100%',
               height: '100%',
               objectFit: 'contain',
-              filter: 'drop-shadow(0 0 18px rgba(197,160,117,0.6))',
-              animation: 'logoPulse 2s ease-in-out infinite',
+              display: 'block',
+              filter: 'drop-shadow(0 4px 20px rgba(197, 160, 117, 0.5))',
             }}
           />
         </div>
 
-        {/* Brand text */}
-        <h1 style={{
-          color: '#FFFFFF',
-          fontSize: 'clamp(1.3rem, 5vw, 2rem)',
-          letterSpacing: '0.04em',
-          fontWeight: '800',
-          fontFamily: 'var(--font-heading)',
-          marginBottom: '0.2rem',
-          lineHeight: 1.2,
-        }}>
+        {/* Brand Name */}
+        <h1
+          style={{
+            color: '#FFFFFF',
+            fontSize: 'clamp(1.4rem, 4.5vw, 1.9rem)',
+            letterSpacing: '0.06em',
+            fontWeight: '800',
+            fontFamily: 'var(--font-heading)',
+            marginBottom: '0.35rem',
+            lineHeight: 1.15,
+            animation: 'fadeInUp 0.8s ease 0.15s forwards',
+            opacity: 0,
+          }}
+        >
           LK FURNITURE <span style={{ color: '#C5A075' }}>WORLD1</span>
         </h1>
-        <p style={{
-          color: '#A0B4B0',
-          fontSize: 'clamp(0.65rem, 2.5vw, 0.8rem)',
-          letterSpacing: '0.22em',
-          textTransform: 'uppercase',
-          marginBottom: '2.5rem',
-          fontWeight: '600',
-        }}>
-          Commercial &amp; Residential Custom Seating
+
+        {/* Subtitle */}
+        <p
+          style={{
+            color: 'rgba(255, 255, 255, 0.65)',
+            fontSize: 'clamp(0.62rem, 2vw, 0.72rem)',
+            letterSpacing: '0.22em',
+            textTransform: 'uppercase',
+            marginBottom: '2rem',
+            fontWeight: '600',
+            animation: 'fadeInUp 0.8s ease 0.3s forwards',
+            opacity: 0,
+          }}
+        >
+          Crafted for Excellence &bull; Bengaluru
         </p>
 
-        {/* Progress bar */}
-        <div style={{
-          width: 'clamp(200px, 55vw, 280px)',
-          height: '4px',
-          background: 'rgba(255, 255, 255, 0.12)',
-          borderRadius: '10px',
-          overflow: 'hidden',
-          marginBottom: '1rem',
-        }}>
-          <div style={{
-            width: `${percent}%`,
-            height: '100%',
-            background: 'linear-gradient(90deg, #C5A075, #E8D3BA)',
-            borderRadius: '10px',
-            transition: 'width 0.1s ease',
-          }} />
+        {/* Ultra-Fine Minimalist Gold Line Progress */}
+        <div
+          style={{
+            width: '140px',
+            height: '1.5px',
+            background: 'rgba(255, 255, 255, 0.1)',
+            borderRadius: '999px',
+            overflow: 'hidden',
+            position: 'relative',
+          }}
+        >
+          <div
+            style={{
+              width: '100%',
+              height: '100%',
+              background: 'linear-gradient(90deg, #C5A075, #E8D3BA)',
+              animation: 'expandLine 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards',
+              transformOrigin: 'left',
+            }}
+          />
         </div>
-
-        <span style={{
-          color: '#C5A075',
-          fontSize: '0.9rem',
-          fontFamily: 'var(--font-heading)',
-          fontWeight: '700',
-        }}>
-          {percent}%
-        </span>
       </div>
 
       <style>{`
-        @keyframes logoPulse {
-          0%, 100% { transform: scale(1); filter: drop-shadow(0 0 18px rgba(197,160,117,0.6)); }
-          50%       { transform: scale(1.06); filter: drop-shadow(0 0 28px rgba(197,160,117,0.9)); }
+        @keyframes introScale {
+          0% {
+            opacity: 0;
+            transform: scale(0.9) translateY(8px);
+          }
+          100% {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+          }
+        }
+        @keyframes fadeInUp {
+          0% {
+            opacity: 0;
+            transform: translateY(10px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        @keyframes glowPulse {
+          0% {
+            opacity: 0.5;
+            transform: scale(0.95);
+          }
+          100% {
+            opacity: 1;
+            transform: scale(1.08);
+          }
+        }
+        @keyframes expandLine {
+          0% {
+            transform: scaleX(0);
+          }
+          100% {
+            transform: scaleX(1);
+          }
         }
       `}</style>
     </div>

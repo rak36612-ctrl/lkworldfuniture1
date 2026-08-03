@@ -28,7 +28,7 @@ Message: ${formData.message}`;
   };
 
   return (
-    <section id="contact" className="section-padding" style={{ background: '#FFFFFF' }}>
+    <section id="contact" style={{ background: '#FFFFFF', paddingTop: '3rem', paddingBottom: '1.5rem' }}>
       <div className="container">
         
         <div style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
