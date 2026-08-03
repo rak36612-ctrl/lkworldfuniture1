@@ -20,17 +20,29 @@ export default function Footer() {
         {/* Top Brand Block matching Promax footer screenshot */}
         <div style={{ marginBottom: '3rem' }}>
           
-          {/* Logo / Title */}
-          <div style={{
-            fontFamily: 'var(--font-heading)',
-            fontSize: 'clamp(1.5rem, 5vw, 2.2rem)',
-            fontWeight: '900',
-            color: '#183B35',
-            letterSpacing: '0.04em',
-            marginBottom: '0.85rem',
-            lineHeight: 1.1
-          }}>
-            LK FURNITURE<span style={{ color: '#B08C5B' }}> WORLD1</span>
+          {/* Logo image + Title */}
+          <div style={{ marginBottom: '0.85rem' }}>
+            <img 
+              src="/images/Final_Logo.png" 
+              alt="LK Furniture World1" 
+              style={{
+                height: '56px',
+                width: 'auto',
+                objectFit: 'contain',
+                margin: '0 auto 0.75rem',
+                display: 'block'
+              }}
+            />
+            <div style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: 'clamp(1.4rem, 4.5vw, 2rem)',
+              fontWeight: '900',
+              color: '#183B35',
+              letterSpacing: '0.04em',
+              lineHeight: 1.1
+            }}>
+              LK FURNITURE<span style={{ color: '#B08C5B' }}> WORLD1</span>
+            </div>
           </div>
 
           {/* Subtitle statement */}
