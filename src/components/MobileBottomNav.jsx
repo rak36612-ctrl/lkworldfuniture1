@@ -10,7 +10,7 @@ export default function MobileBottomNav() {
         bottom: 0,
         left: 0,
         right: 0,
-        zIndex: 9999,
+        zIndex: 99999,
         background: '#101715',
         borderTop: '1px solid rgba(197, 160, 117, 0.25)',
         padding: '0.5rem 0 0.6rem',

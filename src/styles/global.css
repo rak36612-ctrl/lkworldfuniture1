@@ -53,6 +53,13 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Ensure mobile bottom shortcut bar space is reserved so content is never submerged */
+@media (max-width: 991px) {
+  body {
+    padding-bottom: 72px !important;
+  }
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -90,16 +97,16 @@ button {
 .container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1.25rem;
 }
 
 .section-padding {
-  padding: 5.5rem 0;
+  padding: 3rem 0;
 }
 
 .eyebrow-tag {
   font-family: var(--font-heading);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -110,116 +117,114 @@ button {
   gap: 0.5rem;
 }
 
-.eyebrow-tag::before, .eyebrow-tag::after {
-  content: "";
-  display: inline-block;
-  width: 18px;
-  height: 2px;
-  background-color: var(--color-gold);
-}
-
 .section-title {
-  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-size: clamp(1.8rem, 4vw, 3rem);
   font-weight: 700;
   line-height: 1.15;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .section-subtitle {
-  font-size: 1.125rem;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
   color: var(--color-text-muted);
-  max-width: 680px;
+  max-width: 600px;
+  line-height: 1.6;
 }
 
-/* Premium Rounded Pill Buttons */
-.btn-primary {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  background-color: var(--color-primary);
-  color: #FFFFFF;
-  padding: 0.9rem 2rem;
-  border-radius: var(--radius-full);
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: all var(--transition-normal);
-  box-shadow: var(--shadow-sm);
-}
-
-.btn-primary:hover {
-  background-color: var(--color-primary-dark);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-}
-
+/* Modern Button Styles */
 .btn-gold {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  background-color: var(--color-gold);
+  justify-content: center;
+  gap: 0.6rem;
+  background: var(--color-gold);
   color: #FFFFFF;
-  padding: 0.9rem 2rem;
+  padding: 0.85rem 1.75rem;
   border-radius: var(--radius-full);
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: all var(--transition-normal);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-fast);
 }
 
 .btn-gold:hover {
-  background-color: var(--color-gold-hover);
+  background: var(--color-gold-hover);
   transform: translateY(-2px);
-  box-shadow: var(--shadow-glow);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background: var(--color-primary);
+  color: #FFFFFF;
+  padding: 0.85rem 1.75rem;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: all var(--transition-fast);
+}
+
+.btn-primary:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
 }
 
 .btn-outline {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
+  justify-content: center;
+  gap: 0.6rem;
   background: transparent;
-  border: 1.5px solid var(--color-primary);
   color: var(--color-primary);
-  padding: 0.85rem 1.85rem;
+  border: 1.5px solid var(--color-primary);
+  padding: 0.8rem 1.6rem;
   border-radius: var(--radius-full);
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: all var(--transition-normal);
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: all var(--transition-fast);
 }
 
 .btn-outline:hover {
-  background-color: var(--color-primary-subtle);
-  transform: translateY(-2px);
+  background: var(--color-primary);
+  color: #FFFFFF;
 }
 
-/* Card Styling */
-.card-container {
-  background: var(--color-card-bg);
-  border-radius: var(--radius-lg);
-  padding: 2.5rem;
-  box-shadow: var(--shadow-sm);
-  border: 1px solid rgba(24, 59, 53, 0.06);
-  transition: all var(--transition-normal);
+/* Pulse animation for WhatsApp floating button */
+@keyframes whatsappPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
 }
 
-.card-container:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-4px);
+.pulse-whatsapp {
+  animation: whatsappPulse 2.2s infinite;
 }
 
-/* Preloader full screen overlay */
+/* Keyframe for subtle preloader fade */
+@keyframes preloaderFadeOut {
+  from { opacity: 1; visibility: visible; }
+  to { opacity: 0; visibility: hidden; }
+}
+
 .preloader-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  inset: 0;
   background-color: var(--color-primary-dark);
   z-index: 99999;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #FFFFFF;
-  transition: opacity 0.8s ease, visibility 0.8s ease;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 .preloader-overlay.hidden {
@@ -228,76 +233,26 @@ button {
   pointer-events: none;
 }
 
-/* Keyframe animations */
-@keyframes pulseGlow {
-  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
-  70% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-}
-
-.pulse-whatsapp {
-  animation: pulseGlow 2s infinite;
-}
-
-@media (max-width: 768px) {
-  .section-padding {
-    padding: 3.5rem 0;
+/* Mobile viewport optimizations */
+@media (max-width: 991px) {
+  .whatsapp-widget-wrap {
+    bottom: 5.2rem !important;
+    right: 1.25rem !important;
   }
-  .card-container {
-    padding: 1.5rem;
-    border-radius: var(--radius-md);
+  
+  .whatsapp-float {
+    width: 54px !important;
+    height: 54px !important;
   }
-}
-
-/* Quote calculator responsive styles */
-.quote-calculator-box {
-  max-width: 1000px;
-  margin: 0 auto;
-  background: #FFFFFF;
-  border-radius: 32px;
-  padding: 2.25rem;
-  box-shadow: var(--shadow-lg);
-  border: 1px solid rgba(24, 59, 53, 0.08);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  width: 100%;
-}
-
-.quote-results {
-  background: var(--color-primary-dark);
-  color: #FFFFFF;
-  border-radius: 24px;
-  padding: 1.75rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 0 12px 30px rgba(16, 40, 36, 0.25);
-}
-
-.quote-calculator-box select,
-.quote-calculator-box input[type="range"],
-.quote-calculator-box button,
-.quote-calculator-box .btn-gold {
-  width: 100%;
-  box-sizing: border-box;
 }
 
 @media (max-width: 600px) {
-  .quote-calculator-box {
-    padding: 1rem;
-    gap: 1rem;
-    border-radius: 18px;
-    grid-template-columns: 1fr;
+  .container {
+    padding: 0 1rem;
   }
 
-  .quote-calculator-box h3 {
-    font-size: 1.15rem;
-  }
-
-  .quote-results {
-    padding: 1rem;
-    border-radius: 14px;
+  .section-padding {
+    padding: 2.25rem 0;
   }
 
   .section-title {
@@ -305,35 +260,11 @@ button {
   }
 
   .section-subtitle {
-    font-size: 0.95rem;
-    padding: 0 0.5rem;
-  }
-
-  .eyebrow-tag {
-    font-size: 0.75rem;
-    gap: 0.4rem;
+    font-size: 0.92rem;
   }
 
   .btn-gold, .btn-primary, .btn-outline {
-    padding: 0.7rem 1rem;
-    font-size: 0.9rem;
-  }
-}
-
-/* WhatsApp widget small-screen tweaks */
-.whatsapp-float {
-  width: 56px !important;
-  height: 56px !important;
-}
-
-@media (max-width: 480px) {
-  .whatsapp-float {
-    right: 1rem !important;
-    bottom: 1rem !important;
-  }
-
-  .whatsapp-label {
-    display: block;
-    margin-right: 0.25rem;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.85rem;
   }
 }

@@ -49,15 +49,41 @@ const CATEGORIES_DATA = {
     ]
   },
   'executive-chairs': {
-    title: 'EXECUTIVE CHAIRS',
+    title: 'EXECUTIVE & BOARDROOM CHAIRS',
     sections: [
       {
         title: 'EXECUTIVE & BOARDROOM SEATING',
         items: [
-          { id: 'e1', image: '/images/boardroom_chair.jpg', tag: 'Leatherette High-Back' },
-          { id: 'e2', image: '/images/hero_chairs.jpg', tag: 'Ergonomic Lumbar' },
-          { id: 'e3', image: '/images/ergonomic_lumbar.webp', tag: 'Memory Foam Cushion' },
-          { id: 'e4', image: '/images/boardroom_chair.jpg', tag: 'Chrome Base Swivel' }
+          { id: 'bc1', image: '/images/BoardstationChair1.jpeg', tag: 'Leatherette High-Back' },
+          { id: 'bc2', image: '/images/BoardstationChair2.jpeg', tag: 'Ergonomic Lumbar Command' },
+          { id: 'bc3', image: '/images/BoardstationChair3.jpeg', tag: 'Synchronized Tilt Mechanism' },
+          { id: 'bc4', image: '/images/BoardstationChair4.jpeg', tag: 'Chrome Base Swivel' },
+          { id: 'bc5', image: '/images/BoardstationChair5.jpeg', tag: 'High-Tensile Mesh' },
+          { id: 'bc6', image: '/images/BoardstationChair6.jpeg', tag: 'Padded Armrest Task Chair' },
+          { id: 'bc7', image: '/images/BoardstationChair7.jpeg', tag: 'High-Back Conference Chair' },
+          { id: 'bc8', image: '/images/BoardstationChair8.jpeg', tag: 'Minimalist Boardroom Chair' },
+          { id: 'bc9', image: '/images/BoardstationChair9.jpeg', tag: 'Premium Executive Leather' },
+          { id: 'bc10', image: '/images/BoardstationChair10.jpeg', tag: 'Ergonomic Task Seating' }
+        ]
+      }
+    ]
+  },
+  lounge: {
+    title: 'LOUNGE CHAIRS & SEATING',
+    sections: [
+      {
+        title: 'LUXURY LOUNGE & RECEPTION CHAIRS',
+        items: [
+          { id: 'lc1', image: '/images/loungechair1.jpeg', tag: 'Accent Lounge Chair' },
+          { id: 'lc2', image: '/images/loungechair2.jpeg', tag: 'Soft Velvet Reception Chair' },
+          { id: 'lc3', image: '/images/loungechair3.jpeg', tag: 'High-Back Luxury Armchair' },
+          { id: 'lc4', image: '/images/loungechair4.jpeg', tag: 'Modern Minimalist Club Chair' },
+          { id: 'lc5', image: '/images/loungechair5.jpeg', tag: 'Stain-Resistant Upholstered' },
+          { id: 'lc6', image: '/images/loungechair6.jpeg', tag: 'Ergonomic Soft Cushion' },
+          { id: 'lc7', image: '/images/loungechair7.jpeg', tag: 'Executive Reception Seating' },
+          { id: 'lc8', image: '/images/loungechair8.jpeg', tag: 'Solid Wood Accent Chair' },
+          { id: 'lc9', image: '/images/loungechair9.jpeg', tag: 'Contemporary Cafe Lounge' },
+          { id: 'lc10', image: '/images/loungechair10.jpeg', tag: 'Plush Comfort Armchair' }
         ]
       }
     ]
@@ -70,17 +96,6 @@ const CATEGORIES_DATA = {
         items: [
           { id: 't1', image: '/images/collaborative_desk.jpg', tag: 'Pre-laminated Wood' },
           { id: 't2', image: '/images/custom_workstation.jpg', tag: 'Wireway Cable System' }
-        ]
-      }
-    ]
-  },
-  lounge: {
-    title: 'LOUNGE FURNITURE',
-    sections: [
-      {
-        title: 'RECEPTION & LOUNGE SETS',
-        items: [
-          { id: 'l1', image: '/images/ergonomic_lumbar.webp', tag: 'Stain-Resistant Fabric' }
         ]
       }
     ]
@@ -145,7 +160,7 @@ export default function CollectionCategoryPage({ categoryKey, onNavigateBack }) 
                 gap: '0.75rem',
                 borderBottom: '2px solid #C5A075',
                 paddingBottom: '0.5rem',
-                maxWidth: '320px'
+                maxWidth: '360px'
               }}>
                 {section.title}
               </div>

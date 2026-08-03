@@ -9,7 +9,7 @@ export default function WhatsAppWidget() {
         position: 'fixed',
         bottom: '2rem',
         right: '2rem',
-        zIndex: 99999,
+        zIndex: 100000,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -42,7 +42,7 @@ export default function WhatsAppWidget() {
       <style>{`
         @media (max-width: 991px) {
           .whatsapp-widget-wrap {
-            bottom: 4.8rem !important;
+            bottom: 5.2rem !important;
             right: 1.25rem !important;
           }
         }
