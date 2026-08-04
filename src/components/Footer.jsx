@@ -165,11 +165,17 @@ export default function Footer() {
               COLLECTION
             </div>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.85rem', fontSize: '0.82rem', fontWeight: '700', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
-              <li><a href="#category-executive-chairs" style={{ color: '#183B35', textDecoration: 'none' }}>EXECUTIVE CHAIR</a></li>
-              <li><a href="#category-workstations" style={{ color: '#183B35', textDecoration: 'none' }}>WORKSTATION CHAIR</a></li>
-              <li><a href="#category-lounge" style={{ color: '#183B35', textDecoration: 'none' }}>CAFE CHAIR</a></li>
-              <li><a href="#category-barstool" style={{ color: '#183B35', textDecoration: 'none' }}>BARSTOOL</a></li>
-              <li><a href="#collection" style={{ color: '#B08C5B', textDecoration: 'none' }}>VIEW ALL</a></li>
+              <li><a href="#category-executive-chairs" style={{ color: '#183B35', textDecoration: 'none' }}>EXECUTIVE CHAIRS</a></li>
+              <li><a href="#category-boss-chairs" style={{ color: '#183B35', textDecoration: 'none' }}>BOSS CHAIRS</a></li>
+              <li><a href="#category-office-workstation" style={{ color: '#183B35', textDecoration: 'none' }}>OFFICE / WORKSTATION CHAIRS</a></li>
+              <li><a href="#category-boardstation-chairs" style={{ color: '#183B35', textDecoration: 'none' }}>BOARDSTATION CHAIRS</a></li>
+              <li><a href="#category-writing-pad-chairs" style={{ color: '#183B35', textDecoration: 'none' }}>WRITING PAD CHAIRS</a></li>
+              <li><a href="#category-cafeteria-chairs" style={{ color: '#183B35', textDecoration: 'none' }}>CAFETERIA CHAIRS</a></li>
+              <li><a href="#category-barstool" style={{ color: '#183B35', textDecoration: 'none' }}>BAR STOOLS</a></li>
+              <li><a href="#category-lounge" style={{ color: '#183B35', textDecoration: 'none' }}>LOUNGE CHAIRS</a></li>
+              <li><a href="#category-school-desks" style={{ color: '#183B35', textDecoration: 'none' }}>SCHOOL DESKS</a></li>
+              <li><a href="#category-bunker-cot-beds" style={{ color: '#183B35', textDecoration: 'none' }}>BUNKER COT BEDS</a></li>
+              <li><a href="#category-restaurant-tables" style={{ color: '#183B35', textDecoration: 'none' }}>RESTAURANT TABLES</a></li>
             </ul>
           </div>
 
@@ -190,6 +196,7 @@ export default function Footer() {
               <li><a href="#about" style={{ color: '#3A4D48', textDecoration: 'none' }}>Our Story</a></li>
               <li><a href="#craftsmanship" style={{ color: '#3A4D48', textDecoration: 'none' }}>Craftsmanship</a></li>
               <li><a href="#workshop" style={{ color: '#3A4D48', textDecoration: 'none' }}>Video Tour</a></li>
+              <li><a href="/lkfinale.pdf" target="_blank" rel="noopener noreferrer" style={{ color: '#B08C5B', fontWeight: '800', textDecoration: 'none' }}>Catalogue PDF 📄</a></li>
               <li><a href="#contact" style={{ color: '#3A4D48', textDecoration: 'none' }}>Showroom Location</a></li>
             </ul>
           </div>

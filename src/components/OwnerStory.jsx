@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, Users, CheckCircle2, ShieldCheck, HeartHandshake } from 'lucide-react';
+import { Award, CheckCircle2, ShieldCheck, HeartHandshake, Calendar } from 'lucide-react';
 
 export default function OwnerStory() {
   return (
@@ -22,7 +22,7 @@ export default function OwnerStory() {
             gap: '0.75rem'
           }}>
             <span style={{ width: '32px', height: '1.5px', background: '#B08C5B' }}></span>
-            THE OWNER'S STORY
+            OUR STORY & JOURNEY
             <span style={{ width: '32px', height: '1.5px', background: '#B08C5B' }}></span>
           </div>
 
@@ -35,9 +35,9 @@ export default function OwnerStory() {
             letterSpacing: '-0.02em',
             marginBottom: '0.5rem'
           }}>
-            From Corporate Roots to <br />
+            Built on Determination. <br />
             <span style={{ fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: '500', color: '#B08C5B' }}>
-              Crafting Excellence
+              Driven by Trust.
             </span>
           </h2>
         </div>
@@ -62,11 +62,11 @@ export default function OwnerStory() {
               overflow: 'hidden',
               boxShadow: '0 12px 36px rgba(0,0,0,0.12)',
               position: 'relative',
-              height: '350px'
+              height: '380px'
             }}>
               <img
                 src="/images/craftsmanship_stage.jpg"
-                alt="LK Furniture World1 Founders Workshop"
+                alt="LK Furniture World1 Founders Mr. Dilip Raj and Mr. Harsha"
                 style={{
                   width: '100%',
                   height: '100%',
@@ -77,14 +77,30 @@ export default function OwnerStory() {
               <div style={{
                 position: 'absolute',
                 inset: 0,
-                background: 'linear-gradient(180deg, transparent 50%, rgba(24, 59, 53, 0.75) 100%)'
+                background: 'linear-gradient(180deg, transparent 40%, rgba(24, 59, 53, 0.85) 100%)'
               }} />
+
+              {/* Founders Tag */}
+              <div style={{
+                position: 'absolute',
+                bottom: '1.25rem',
+                left: '1.25rem',
+                color: '#FFFFFF',
+                zIndex: 2
+              }}>
+                <div style={{ fontSize: '0.72rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#C5A075', fontWeight: '700' }}>
+                  FOUNDERS
+                </div>
+                <div style={{ fontFamily: 'var(--font-heading)', fontSize: '1.15rem', fontWeight: '800' }}>
+                  Mr. Dilip Raj & Mr. Harsha
+                </div>
+              </div>
             </div>
 
             {/* Floating Gold Milestone Badge */}
             <div style={{
               position: 'absolute',
-              bottom: '-1.25rem',
+              top: '-1.25rem',
               right: '1.25rem',
               background: '#162220',
               color: '#FFFFFF',
@@ -114,17 +130,17 @@ export default function OwnerStory() {
                   400+
                 </div>
                 <div style={{ fontSize: '0.68rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'rgba(255, 255, 255, 0.8)', fontWeight: '600' }}>
-                  Orders Delivered
+                  Projects Completed
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Right Column: Crisp 4-Line Founder Story */}
+          {/* Right Column: User's Authentic Founder Story */}
           <div>
             
             <div style={{
-              fontSize: '1.05rem',
+              fontSize: '0.98rem',
               color: '#3A4D48',
               lineHeight: 1.75,
               fontFamily: 'var(--font-body)',
@@ -133,19 +149,19 @@ export default function OwnerStory() {
               gap: '1rem'
             }}>
               <p style={{ margin: 0 }}>
-                Driven by a shared vision, two close friends left their corporate jobs to revolutionize Bengaluru’s furniture market with direct factory quality.
+                Every successful business begins with a dream. <strong>LK Furniture World1</strong> was born from the determination of two close friends, <strong>Mr. Dilip Raj</strong> and <strong>Mr. Harsha</strong>, who believed that true success comes to those willing to take risks and work relentlessly.
               </p>
 
               <p style={{ margin: 0 }}>
-                Uniting their passion for craftsmanship, they founded <strong>LK Furniture World1</strong> on Mysore Road to eliminate middleman markups.
+                In <strong>October 2023</strong>, after working as Sales Executives in a well-known company, they made the bold decision to build something of their own. Growing up in a Bengaluru neighborhood connected to the furniture industry, crafting quality seating wasn’t just a business—it was part of their everyday lives.
               </p>
 
               <p style={{ margin: 0 }}>
-                Today, with over <strong>400+ custom commercial and residential orders successfully delivered</strong>, their core promise remains unchanged.
+                The beginning was far from easy. They personally printed visiting cards, traveled across every corner of Bengaluru, and met interior designers, schools, corporate offices, restaurants, and cafés to establish trust.
               </p>
 
               <p style={{ margin: 0 }}>
-                Every piece is engineered with uncompromised ergonomic quality, direct factory pricing, and built to exceed every client expectation.
+                What began by supplying a few cafeteria chairs has today grown into a trusted furniture brand offering <strong>10 major product categories</strong> with <strong>400+ completed projects</strong>. Like the Phoenix, every challenge made them stronger—and this is only the beginning.
               </p>
             </div>
 
@@ -159,16 +175,16 @@ export default function OwnerStory() {
               borderTop: '1px solid rgba(24, 59, 53, 0.08)'
             }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.85rem', fontWeight: '700', color: '#162220' }}>
-                <HeartHandshake size={17} color="#B08C5B" /> 2 Friends, 1 Dream
+                <Calendar size={17} color="#B08C5B" /> Est. October 2023
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.85rem', fontWeight: '700', color: '#162220' }}>
-                <ShieldCheck size={17} color="#B08C5B" /> 100% Quality Guaranteed
+                <HeartHandshake size={17} color="#B08C5B" /> Mr. Dilip & Mr. Harsha
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.85rem', fontWeight: '700', color: '#162220' }}>
-                <CheckCircle2 size={17} color="#B08C5B" /> 400+ Happy Clients
+                <CheckCircle2 size={17} color="#B08C5B" /> 400+ Successful Projects
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.85rem', fontWeight: '700', color: '#162220' }}>
-                <Users size={17} color="#B08C5B" /> Mysore Rd Showroom
+                <ShieldCheck size={17} color="#B08C5B" /> 10 Major Categories
               </div>
             </div>
 

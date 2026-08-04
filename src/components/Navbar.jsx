@@ -135,23 +135,38 @@ export default function Navbar({ onOpenQuoteModal, onSelectCategory, activeCateg
                 gap: '0.2rem',
                 zIndex: 100
               }}>
-                <button onClick={() => handleCategoryClick('barstool')} className="dropdown-item">
-                  BARSTOOL
-                </button>
                 <button onClick={() => handleCategoryClick('executive-chairs')} className="dropdown-item">
                   EXECUTIVE CHAIRS
+                </button>
+                <button onClick={() => handleCategoryClick('boss-chairs')} className="dropdown-item">
+                  BOSS CHAIRS
+                </button>
+                <button onClick={() => handleCategoryClick('office-workstation')} className="dropdown-item">
+                  OFFICE / WORKSTATION CHAIRS
                 </button>
                 <button onClick={() => handleCategoryClick('boardstation-chairs')} className="dropdown-item">
                   BOARDSTATION CHAIRS
                 </button>
-                <button onClick={() => handleCategoryClick('workstations')} className="dropdown-item">
-                  WORKSTATION CHAIRS
+                <button onClick={() => handleCategoryClick('writing-pad-chairs')} className="dropdown-item">
+                  WRITING PAD CHAIRS
+                </button>
+                <button onClick={() => handleCategoryClick('cafeteria-chairs')} className="dropdown-item">
+                  CAFETERIA CHAIRS
+                </button>
+                <button onClick={() => handleCategoryClick('barstool')} className="dropdown-item">
+                  BAR STOOLS
                 </button>
                 <button onClick={() => handleCategoryClick('lounge')} className="dropdown-item">
-                  LOUNGE FURNITURE
+                  LOUNGE CHAIRS
                 </button>
                 <button onClick={() => handleCategoryClick('school-desks')} className="dropdown-item">
                   SCHOOL DESKS
+                </button>
+                <button onClick={() => handleCategoryClick('bunker-cot-beds')} className="dropdown-item">
+                  BUNKER COT BEDS
+                </button>
+                <button onClick={() => handleCategoryClick('restaurant-tables')} className="dropdown-item">
+                  RESTAURANT TABLES
                 </button>
               </div>
             )}
@@ -159,6 +174,7 @@ export default function Navbar({ onOpenQuoteModal, onSelectCategory, activeCateg
 
           <a href="#craftsmanship" onClick={handleHomeClick} className="nav-link">CRAFTSMANSHIP</a>
           <a href="#workshop" onClick={handleHomeClick} className="nav-link">VIDEO TOUR</a>
+          <a href="/lkfinale.pdf" target="_blank" rel="noopener noreferrer" className="nav-link" style={{ color: '#C5A075', fontWeight: '800' }}>CATALOGUE PDF</a>
           <a href="#contact" onClick={handleHomeClick} className="nav-link">LOCATION</a>
         </nav>
 
@@ -212,34 +228,52 @@ export default function Navbar({ onOpenQuoteModal, onSelectCategory, activeCateg
           boxShadow: 'var(--shadow-lg)',
           display: 'flex',
           flexDirection: 'column',
-          gap: '0.85rem'
+          gap: '0.85rem',
+          maxHeight: '80vh',
+          overflowY: 'auto'
         }}>
           <a href="#carousel-hero" onClick={handleHomeClick} className="mobile-nav-link">HOME</a>
           
           <div style={{ fontWeight: '800', fontSize: '0.8rem', color: '#C5A075', letterSpacing: '0.12em', marginTop: '0.5rem' }}>
             COLLECTIONS
           </div>
-          <button onClick={() => handleCategoryClick('barstool')} className="mobile-nav-sublink">
-            • BARSTOOL
-          </button>
           <button onClick={() => handleCategoryClick('executive-chairs')} className="mobile-nav-sublink">
             • EXECUTIVE CHAIRS
+          </button>
+          <button onClick={() => handleCategoryClick('boss-chairs')} className="mobile-nav-sublink">
+            • BOSS CHAIRS
+          </button>
+          <button onClick={() => handleCategoryClick('office-workstation')} className="mobile-nav-sublink">
+            • OFFICE / WORKSTATION CHAIRS
           </button>
           <button onClick={() => handleCategoryClick('boardstation-chairs')} className="mobile-nav-sublink">
             • BOARDSTATION CHAIRS
           </button>
-          <button onClick={() => handleCategoryClick('workstations')} className="mobile-nav-sublink">
-            • WORKSTATIONS
+          <button onClick={() => handleCategoryClick('writing-pad-chairs')} className="mobile-nav-sublink">
+            • WRITING PAD CHAIRS
+          </button>
+          <button onClick={() => handleCategoryClick('cafeteria-chairs')} className="mobile-nav-sublink">
+            • CAFETERIA CHAIRS
+          </button>
+          <button onClick={() => handleCategoryClick('barstool')} className="mobile-nav-sublink">
+            • BAR STOOLS
           </button>
           <button onClick={() => handleCategoryClick('lounge')} className="mobile-nav-sublink">
-            • LOUNGE FURNITURE
+            • LOUNGE CHAIRS
           </button>
           <button onClick={() => handleCategoryClick('school-desks')} className="mobile-nav-sublink">
             • SCHOOL DESKS
           </button>
+          <button onClick={() => handleCategoryClick('bunker-cot-beds')} className="mobile-nav-sublink">
+            • BUNKER COT BEDS
+          </button>
+          <button onClick={() => handleCategoryClick('restaurant-tables')} className="mobile-nav-sublink">
+            • RESTAURANT TABLES
+          </button>
 
           <a href="#craftsmanship" onClick={handleHomeClick} className="mobile-nav-link" style={{ marginTop: '0.5rem' }}>CRAFTSMANSHIP</a>
           <a href="#workshop" onClick={handleHomeClick} className="mobile-nav-link">VIDEO TOUR</a>
+          <a href="/lkfinale.pdf" target="_blank" rel="noopener noreferrer" className="mobile-nav-link" style={{ color: '#C5A075', fontWeight: '800' }}>CATALOGUE PDF 📄</a>
           <a href="#contact" onClick={handleHomeClick} className="mobile-nav-link">LOCATION</a>
 
           <div style={{ paddingTop: '1rem', borderTop: '1px solid #EAEAEA', display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>

@@ -66,7 +66,7 @@ export default function MobileBottomNav() {
 
         {/* Catalogue (Replaces Workshop) */}
         <a 
-          href="https://wa.me/918884487020?text=Hi%20LK%20Furniture%20World1%2C%20please%20send%20me%20your%20complete%202024%20PDF%20catalogue."
+          href="/lkfinale.pdf"
           target="_blank"
           rel="noopener noreferrer"
           style={{

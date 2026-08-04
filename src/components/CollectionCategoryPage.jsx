@@ -5,7 +5,7 @@ const executiveChairsCollection = {
   title: 'EXECUTIVE CHAIRS',
   sections: [
     {
-      title: 'LUXURY EXECUTIVE SEATING',
+      title: 'EXECUTIVE SEATING',
       items: [
         { id: 'ec1', image: '/images/ExecutiveChair1.jpeg', tag: 'High-Back Executive Leather' },
         { id: 'ec2', image: '/images/ExecutiveChair2.jpeg', tag: 'Ergonomic Command Chair' },
@@ -17,6 +17,27 @@ const executiveChairsCollection = {
         { id: 'ec8', image: '/images/ExecutiveChair8.jpeg', tag: 'Contoured Lumbar Support' },
         { id: 'ec9', image: '/images/ExecutiveChair9.jpeg', tag: 'Executive Office Command' },
         { id: 'ec10', image: '/images/ExecutiveChair10.jpeg', tag: 'Luxury Ergonomic Swivel' }
+      ]
+    }
+  ]
+};
+
+const bossChairsCollection = {
+  title: 'BOSS CHAIRS',
+  sections: [
+    {
+      title: 'PREMIUM BOSS & COMMAND SEATING',
+      items: [
+        { id: 'bch1', image: '/images/BossChair1.jpeg', tag: 'Luxury Leatherette Boss Chair' },
+        { id: 'bch2', image: '/images/BossChair2.jpeg', tag: 'High-Back Command Boss Chair' },
+        { id: 'bch3', image: '/images/BossChair3.jpeg', tag: 'Ergonomic Recline Boss Chair' },
+        { id: 'bch4', image: '/images/BossChair4.jpeg', tag: 'Chrome Base Swivel Boss' },
+        { id: 'bch5', image: '/images/BossChair5.jpeg', tag: 'Padded Cushion Boss Seat' },
+        { id: 'bch6', image: '/images/BossChair6.jpeg', tag: 'Executive Office Boss Chair' },
+        { id: 'bch7', image: '/images/BossChair7.jpeg', tag: 'High-Tensile Mesh Boss' },
+        { id: 'bch8', image: '/images/BossChair8.jpeg', tag: 'Synchronized Tilt Boss' },
+        { id: 'bch9', image: '/images/BossChair9.jpeg', tag: 'Premium Leather Boss Armchair' },
+        { id: 'bch10', image: '/images/BossChair10.jpeg', tag: 'Minimalist Command Boss Chair' }
       ]
     }
   ]
@@ -44,7 +65,7 @@ const boardstationChairsCollection = {
 };
 
 const barstoolCollection = {
-  title: 'BARSTOOL',
+  title: 'BAR STOOLS',
   sections: [
     {
       title: 'BAR STOOLS',
@@ -72,27 +93,27 @@ const barstoolCollection = {
   ]
 };
 
-const workstationsCollection = {
-  title: 'WORKSTATION CHAIRS',
+const officeWorkstationCollection = {
+  title: 'OFFICE / WORKSTATION CHAIRS',
   sections: [
     {
-      title: 'WORKSTATION & TASK SEATING',
+      title: 'ERGONOMIC OFFICE & WORKSTATION SEATING',
       items: [
-        { id: 'wc1', image: '/images/workstationchair1.jpeg', tag: 'High-Tensile Mesh' },
-        { id: 'wc2', image: '/images/workstationchair2.jpeg', tag: 'Ergonomic Lumbar Support' },
-        { id: 'wc3', image: '/images/workstationchair3.jpeg', tag: 'Synchronized Tilt' },
-        { id: 'wc4', image: '/images/workstationchair4.jpeg', tag: 'Adjustable Armrests' },
-        { id: 'wc5', image: '/images/workstationchair5.jpeg', tag: 'Breathable Backrest' },
-        { id: 'wc6', image: '/images/workstationchair6.jpeg', tag: 'Chrome Base Swivel' },
-        { id: 'wc7', image: '/images/workstationchair7.jpeg', tag: 'Task & Computer Seating' },
-        { id: 'wc8', image: '/images/workstationchair8.jpeg', tag: 'Executive Workstation Chair' }
+        { id: 'ow1', image: '/images/workstationchair1.jpeg', tag: 'High-Tensile Ergonomic Mesh' },
+        { id: 'ow2', image: '/images/workstationchair2.jpeg', tag: 'Adjustable Lumbar Workstation' },
+        { id: 'ow3', image: '/images/workstationchair3.jpeg', tag: 'Synchronized Tilt Task Chair' },
+        { id: 'ow4', image: '/images/workstationchair4.jpeg', tag: '3D Armrest Office Chair' },
+        { id: 'ow5', image: '/images/workstationchair5.jpeg', tag: 'Breathable Backrest Chair' },
+        { id: 'ow6', image: '/images/workstationchair6.jpeg', tag: 'Chrome Base Swivel Task' },
+        { id: 'ow7', image: '/images/workstationchair7.jpeg', tag: 'Computer & Office Seating' },
+        { id: 'ow8', image: '/images/workstationchair8.jpeg', tag: 'Executive Workstation Chair' }
       ]
     }
   ]
 };
 
 const loungeCollection = {
-  title: 'LOUNGE CHAIRS & SEATING',
+  title: 'LOUNGE CHAIRS',
   sections: [
     {
       title: 'LUXURY LOUNGE & RECEPTION CHAIRS',
@@ -116,9 +137,99 @@ const schoolDesksCollection = {
   title: 'SCHOOL DESKS',
   sections: [
     {
-      title: 'CLASSROOM & INSTITUTIONAL SEATING',
+      title: 'CLASSROOM & INSTITUTIONAL DESKS',
       items: [
-        { id: 's1', image: '/images/school_desks.jpg', tag: 'Heavy Duty Steel Bench' }
+        { id: 'sd1', image: '/images/SchoolDesk1.jpeg', tag: 'Dual-Seater School Desk' },
+        { id: 'sd2', image: '/images/SchoolDesk2.jpeg', tag: 'Ergonomic Student Bench' },
+        { id: 'sd3', image: '/images/SchoolDesk3.jpeg', tag: 'Heavy Duty Steel Frame' },
+        { id: 'sd4', image: '/images/SchoolDesk4.jpeg', tag: 'Classroom Desk & Bench' },
+        { id: 'sd5', image: '/images/SchoolDesk5.jpeg', tag: 'Pre-laminated Board Top' },
+        { id: 'sd6', image: '/images/SchoolDesk6.jpeg', tag: 'Institutional Bench Setup' },
+        { id: 'sd7', image: '/images/SchoolDesk7.jpeg', tag: 'Storage Rack Student Desk' },
+        { id: 'sd8', image: '/images/SchoolDesk8.jpeg', tag: '4-Seater Heavy Duty Desk' }
+      ]
+    }
+  ]
+};
+
+const cafeteriaChairsCollection = {
+  title: 'CAFETERIA CHAIRS',
+  sections: [
+    {
+      title: 'COMMERCIAL CAFE & DINING SEATING',
+      items: [
+        { id: 'cc1', image: '/images/cafeteriachair1.jpeg', tag: 'Ergonomic Cafe Shell Chair' },
+        { id: 'cc2', image: '/images/cafeteriachair2.jpeg', tag: 'Contoured Dining Chair' },
+        { id: 'cc3', image: '/images/cafeteriachair3.jpeg', tag: 'Stackable Cafeteria Chair' },
+        { id: 'cc4', image: '/images/cafeteriachair4.jpeg', tag: 'Modern Food Court Chair' },
+        { id: 'cc5', image: '/images/cafeteriachair5.jpeg', tag: 'Padded Cushion Cafe Seating' },
+        { id: 'cc6', image: '/images/cafeteriachair6.jpeg', tag: 'Minimalist Dining Shell' },
+        { id: 'cc7', image: '/images/cafeteriachair7.jpeg', tag: 'Heavy Duty Metal Frame Chair' },
+        { id: 'cc8', image: '/images/cafeteriachair8.jpeg', tag: 'Contemporary Bistro Chair' },
+        { id: 'cc9', image: '/images/cafeteriachair9.jpeg', tag: 'Industrial Dining Chair' },
+        { id: 'cc10', image: '/images/cafeteriachair10.jpeg', tag: 'Premium Cafeteria Chair' }
+      ]
+    }
+  ]
+};
+
+const writingPadChairsCollection = {
+  title: 'WRITING PAD CHAIRS',
+  sections: [
+    {
+      title: 'TRAINING & SEMINAR SEATING',
+      items: [
+        { id: 'wp1', image: '/images/writingpadchair1.jpeg', tag: 'Attached Folding Pad' },
+        { id: 'wp2', image: '/images/writingpadchair2.jpeg', tag: 'Institutional Training Chair' },
+        { id: 'wp3', image: '/images/writingpadchair3.jpeg', tag: 'Seminar Room Pad Chair' },
+        { id: 'wp4', image: '/images/writingpadchair4.jpeg', tag: 'Ergonomic Mesh Pad Chair' },
+        { id: 'wp5', image: '/images/writingpadchair5.jpeg', tag: 'Classroom Lecture Chair' },
+        { id: 'wp6', image: '/images/writingpadchair6.jpeg', tag: 'Padded Arm Pad Chair' },
+        { id: 'wp7', image: '/images/writingpadchair7.jpeg', tag: 'Heavy Duty Steel Base' },
+        { id: 'wp8', image: '/images/writingpadchair8.jpeg', tag: 'Compact Seminar Seating' },
+        { id: 'wp9', image: '/images/writingpadchair9.jpeg', tag: 'Executive Training Chair' },
+        { id: 'wp10', image: '/images/writingpadchair10.jpeg', tag: 'Premium Writing Pad Chair' }
+      ]
+    }
+  ]
+};
+
+const bunkerCotBedsCollection = {
+  title: 'BUNKER COT BEDS',
+  sections: [
+    {
+      title: 'COMMERCIAL HEAVY-DUTY BUNK BEDS',
+      items: [
+        { id: 'bb1', image: '/images/Bunkercot1.jpeg', tag: 'Dual-Tier Steel Bunk Bed' },
+        { id: 'bb2', image: '/images/Bunkercot2.jpeg', tag: 'Hostel & PG Heavy Duty Bed' },
+        { id: 'bb3', image: '/images/Bunkercot3.jpeg', tag: 'Reinforced Metal Bunk Cot' },
+        { id: 'bb4', image: '/images/Bunkercot4.jpeg', tag: 'Commercial Dormitory Bed' },
+        { id: 'bb5', image: '/images/Bunkercot5.jpeg', tag: 'Double Deck Steel Cot' },
+        { id: 'bb6', image: '/images/Bunkercot6.jpeg', tag: 'Heavy Duty Metal Frame Bunk' },
+        { id: 'bb7', image: '/images/Bunkercot7.jpeg', tag: 'Compact Space-Saving Bunk' },
+        { id: 'bb8', image: '/images/Bunkercot8.jpeg', tag: 'Industrial Strength Cot Bed' },
+        { id: 'bb9', image: '/images/Bunkercot9.jpeg', tag: 'Premium Commercial Bunk Bed' }
+      ]
+    }
+  ]
+};
+
+const restaurantTablesCollection = {
+  title: 'RESTAURANT TABLES',
+  sections: [
+    {
+      title: 'COMMERCIAL DINING & RESTAURANT TABLES',
+      items: [
+        { id: 'rt1', image: '/images/restauranttable1.jpeg', tag: 'Solid Hardwood Dining Table' },
+        { id: 'rt2', image: '/images/restauranttable2.jpeg', tag: 'Compact Cafe Round Table' },
+        { id: 'rt3', image: '/images/restauranttable3.jpeg', tag: 'Heavy Metal Base Table' },
+        { id: 'rt4', image: '/images/restauranttable4.jpeg', tag: 'Commercial Restaurant Table' },
+        { id: 'rt5', image: '/images/restauranttable5.jpeg', tag: 'Contemporary Cafe Table' },
+        { id: 'rt6', image: '/images/restauranttable6.jpeg', tag: 'Square Dining Table' },
+        { id: 'rt7', image: '/images/restauranttable7.jpeg', tag: 'Granite Top Dining Table' },
+        { id: 'rt8', image: '/images/restauranttable8.jpeg', tag: 'Modern Bar & Restaurant Table' },
+        { id: 'rt9', image: '/images/restauranttable9.jpeg', tag: 'Industrial Dining Table' },
+        { id: 'rt10', image: '/images/restauranttable10.jpeg', tag: 'Premium Bistro Dining Table' }
       ]
     }
   ]
@@ -126,16 +237,30 @@ const schoolDesksCollection = {
 
 const CATEGORIES_DATA = {
   barstool: barstoolCollection,
-  workstations: workstationsCollection,
-  workstation: workstationsCollection,
+  'bar-stools': barstoolCollection,
 
-  // Executive Chairs aliases
+  // Combined Office & Workstation Chairs
+  'office-workstation': officeWorkstationCollection,
+  'office-workstations': officeWorkstationCollection,
+  'office/workstation': officeWorkstationCollection,
+  workstations: officeWorkstationCollection,
+  workstation: officeWorkstationCollection,
+  'workstation-chairs': officeWorkstationCollection,
+  'office-chairs': officeWorkstationCollection,
+  office: officeWorkstationCollection,
+
+  // Executive Chairs (Strictly ExecutiveChair1-10)
   executive: executiveChairsCollection,
   'executive-chair': executiveChairsCollection,
   'executive-chairs': executiveChairsCollection,
   executivechairs: executiveChairsCollection,
 
-  // Boardstation Chairs aliases
+  // Boss Chairs (Strictly BossChair1-10)
+  boss: bossChairsCollection,
+  'boss-chairs': bossChairsCollection,
+  bosschairs: bossChairsCollection,
+
+  // Boardstation Chairs
   boardstation: boardstationChairsCollection,
   'boardstation-chair': boardstationChairsCollection,
   'boardstation-chairs': boardstationChairsCollection,
@@ -143,12 +268,35 @@ const CATEGORIES_DATA = {
   boardroom: boardstationChairsCollection,
   'boardroom-tables': boardstationChairsCollection,
 
-  // Lounge Chairs aliases
+  // Lounge Chairs
   lounge: loungeCollection,
   'lounge-chairs': loungeCollection,
 
-  // School desks
-  'school-desks': schoolDesksCollection
+  // School desks (Strictly SchoolDesk1-8)
+  'school-desks': schoolDesksCollection,
+  schooldesks: schoolDesksCollection,
+  school: schoolDesksCollection,
+
+  // Bunker Cot Beds (Strictly Bunkercot1-9)
+  'bunker-cot-beds': bunkerCotBedsCollection,
+  bunkercotbeds: bunkerCotBedsCollection,
+  bunker: bunkerCotBedsCollection,
+  bunkercot: bunkerCotBedsCollection,
+
+  // Writing Pad Chairs (Strictly writingpadchair1-10)
+  'writing-pad-chairs': writingPadChairsCollection,
+  writingpadchairs: writingPadChairsCollection,
+  writingpad: writingPadChairsCollection,
+
+  // Restaurant Tables (Strictly restauranttable1-10)
+  'restaurant-tables': restaurantTablesCollection,
+  restauranttables: restaurantTablesCollection,
+  restaurant: restaurantTablesCollection,
+
+  // Cafeteria Chairs (Strictly cafeteriachair1-10)
+  'cafeteria-chairs': cafeteriaChairsCollection,
+  cafeteriachairs: cafeteriaChairsCollection,
+  cafeteria: cafeteriaChairsCollection
 };
 
 export default function CollectionCategoryPage({ categoryKey, onNavigateBack }) {
@@ -300,7 +448,7 @@ export default function CollectionCategoryPage({ categoryKey, onNavigateBack }) 
         {/* AT LAST: VIEW ENTIRE CATALOGUE BUTTON */}
         <div style={{ textAlign: 'center', paddingTop: '2.5rem', borderTop: '1px solid rgba(24, 59, 53, 0.1)' }}>
           <a
-            href="https://wa.me/918884487020?text=Hi%20LK%20Furniture%20World1%2C%20please%20send%20me%20your%20complete%202024%20PDF%20catalogue%20for%20all%20collections."
+            href="/lkfinale.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-gold"

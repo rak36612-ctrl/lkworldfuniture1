@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Armchair, Layout, Monitor, Sofa, GraduationCap, Wine } from 'lucide-react';
+import { ArrowRight, Armchair, Layout, Monitor, Sofa, GraduationCap, Wine, BedDouble, Utensils } from 'lucide-react';
 
 const CATEGORY_CARDS = [
   {
@@ -11,7 +11,23 @@ const CATEGORY_CARDS = [
     icon: <Armchair size={26} color="#C5A075" strokeWidth={1.5} />
   },
   {
+    id: 12,
+    key: 'boss-chairs',
+    title: 'Boss Chairs',
+    sub: 'Premium high-command seating for leaders.',
+    image: '/images/BossChair1.jpeg',
+    icon: <Armchair size={26} color="#C5A075" strokeWidth={1.5} />
+  },
+  {
     id: 2,
+    key: 'office-workstation',
+    title: 'Office / Workstation Chairs',
+    sub: 'Smart ergonomic seating for maximum workplace productivity.',
+    image: '/images/workstationchair1.jpeg',
+    icon: <Monitor size={26} color="#C5A075" strokeWidth={1.5} />
+  },
+  {
+    id: 4,
     key: 'boardstation-chairs',
     title: 'Boardstation Chairs',
     sub: 'Designed for strategy. Built to impress.',
@@ -19,36 +35,60 @@ const CATEGORY_CARDS = [
     icon: <Layout size={26} color="#C5A075" strokeWidth={1.5} />
   },
   {
-    id: 3,
-    key: 'workstations',
-    title: 'Workstation Solutions',
-    sub: 'Smart spaces. Maximum productivity.',
-    image: '/images/custom_workstation.jpg',
-    icon: <Monitor size={26} color="#C5A075" strokeWidth={1.5} />
-  },
-  {
-    id: 4,
-    key: 'lounge',
-    title: 'Lounge Furniture',
-    sub: 'Comfort that complements luxury.',
-    image: '/images/ergonomic_lumbar.webp',
-    icon: <Sofa size={26} color="#C5A075" strokeWidth={1.5} />
-  },
-  {
     id: 5,
-    key: 'school-desks',
-    title: 'School Desks',
-    sub: 'Heavy-duty 4-seater classroom furniture.',
-    image: '/images/school_desks.jpg',
+    key: 'writing-pad-chairs',
+    title: 'Writing Pad Chairs',
+    sub: 'Training room & seminar institutional seating.',
+    image: '/images/writingpadchair1.jpeg',
     icon: <GraduationCap size={26} color="#C5A075" strokeWidth={1.5} />
   },
   {
     id: 6,
-    key: 'barstool',
-    title: 'Bar Stools & Cafe',
-    sub: 'Woven cane & sleek metal aesthetic.',
-    image: '/images/woven_barstool.jpg',
+    key: 'cafeteria-chairs',
+    title: 'Cafeteria Chairs',
+    sub: 'Commercial cafe & dining space seating.',
+    image: '/images/cafeteriachair1.jpeg',
     icon: <Wine size={26} color="#C5A075" strokeWidth={1.5} />
+  },
+  {
+    id: 7,
+    key: 'barstool',
+    title: 'Bar Stools & Tables',
+    sub: 'Woven cane & sleek metal aesthetic.',
+    image: '/images/barstool2.jpeg',
+    icon: <Wine size={26} color="#C5A075" strokeWidth={1.5} />
+  },
+  {
+    id: 8,
+    key: 'lounge',
+    title: 'Lounge Chairs',
+    sub: 'Comfort that complements luxury.',
+    image: '/images/loungechair1.jpeg',
+    icon: <Sofa size={26} color="#C5A075" strokeWidth={1.5} />
+  },
+  {
+    id: 9,
+    key: 'school-desks',
+    title: 'School Desks',
+    sub: 'Heavy-duty 4-seater classroom furniture.',
+    image: '/images/SchoolDesk1.jpeg',
+    icon: <GraduationCap size={26} color="#C5A075" strokeWidth={1.5} />
+  },
+  {
+    id: 10,
+    key: 'bunker-cot-beds',
+    title: 'Bunker Cot Beds',
+    sub: 'Heavy-duty steel bunk beds for hostels & PGs.',
+    image: '/images/Bunkercot1.jpeg',
+    icon: <BedDouble size={26} color="#C5A075" strokeWidth={1.5} />
+  },
+  {
+    id: 11,
+    key: 'restaurant-tables',
+    title: 'Restaurant Tables',
+    sub: 'Commercial dining & restaurant tables.',
+    image: '/images/restauranttable1.jpeg',
+    icon: <Utensils size={26} color="#C5A075" strokeWidth={1.5} />
   }
 ];
 
@@ -84,7 +124,7 @@ export default function CollectionsShowcase({ onSelectCategory }) {
           </div>
 
           <button 
-            onClick={() => handleClick('barstool')}
+            onClick={() => handleClick('executive-chairs')}
             style={{
               display: 'flex',
               alignItems: 'center',
@@ -99,7 +139,7 @@ export default function CollectionsShowcase({ onSelectCategory }) {
             }}
             className="view-all-link"
           >
-            View All <ArrowRight size={15} color="#C5A075" />
+            View All Collections <ArrowRight size={15} color="#C5A075" />
           </button>
         </div>
 
@@ -164,7 +204,7 @@ export default function CollectionsShowcase({ onSelectCategory }) {
                 <div>
                   <h3 style={{
                     fontFamily: 'var(--font-serif)',
-                    fontSize: 'clamp(1.25rem, 3.5vw, 1.6rem)',
+                    fontSize: 'clamp(1.2rem, 3.5vw, 1.55rem)',
                     fontWeight: '600',
                     color: '#FFFFFF',
                     lineHeight: 1.2,
