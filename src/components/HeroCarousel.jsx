@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 
 const HERO_IMAGES = [
-  { id: 1, image: '/images/HeroImage1.png', alt: 'LK Furniture World1 Hero 1' },
-  { id: 2, image: '/images/HeroImage2.png', alt: 'LK Furniture World1 Hero 2' },
-  { id: 3, image: '/images/HeroImage3.png', alt: 'LK Furniture World1 Hero 3' },
-  { id: 4, image: '/images/HeroImage4.png', alt: 'LK Furniture World1 Hero 4' },
+  { id: 1, image: '/images/HeroImage1.png?v=2', alt: 'LK Furniture World1 Hero 1' },
+  { id: 2, image: '/images/HeroImage2.png?v=2', alt: 'LK Furniture World1 Hero 2' },
+  { id: 3, image: '/images/HeroImage3.png?v=2', alt: 'LK Furniture World1 Hero 3' },
+  { id: 4, image: '/images/HeroImage4.jpeg?v=2', alt: 'LK Furniture World1 Hero 4' },
 ];
 
 export default function HeroCarousel() {

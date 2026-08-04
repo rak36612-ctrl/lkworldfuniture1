@@ -1,120 +1,159 @@
 import React from 'react';
 import { ArrowRight, BookOpen } from 'lucide-react';
 
+const executiveChairsCollection = {
+  title: 'EXECUTIVE CHAIRS',
+  sections: [
+    {
+      title: 'LUXURY EXECUTIVE SEATING',
+      items: [
+        { id: 'ec1', image: '/images/ExecutiveChair1.jpeg', tag: 'High-Back Executive Leather' },
+        { id: 'ec2', image: '/images/ExecutiveChair2.jpeg', tag: 'Ergonomic Command Chair' },
+        { id: 'ec3', image: '/images/ExecutiveChair3.jpeg', tag: 'Synchronized Tilt Mechanism' },
+        { id: 'ec4', image: '/images/ExecutiveChair4.jpeg', tag: 'Chrome Base Swivel' },
+        { id: 'ec5', image: '/images/ExecutiveChair5.jpeg', tag: 'High-Tensile Mesh Backrest' },
+        { id: 'ec6', image: '/images/ExecutiveChair6.jpeg', tag: 'Padded Armrest Executive' },
+        { id: 'ec7', image: '/images/ExecutiveChair7.jpeg', tag: 'Premium Leatherette High-Back' },
+        { id: 'ec8', image: '/images/ExecutiveChair8.jpeg', tag: 'Contoured Lumbar Support' },
+        { id: 'ec9', image: '/images/ExecutiveChair9.jpeg', tag: 'Executive Office Command' },
+        { id: 'ec10', image: '/images/ExecutiveChair10.jpeg', tag: 'Luxury Ergonomic Swivel' }
+      ]
+    }
+  ]
+};
+
+const boardstationChairsCollection = {
+  title: 'BOARDSTATION CHAIRS',
+  sections: [
+    {
+      title: 'BOARDSTATION & BOARDROOM SEATING',
+      items: [
+        { id: 'bc1', image: '/images/BoardstationChair1.jpeg', tag: 'Leatherette High-Back' },
+        { id: 'bc2', image: '/images/BoardstationChair2.jpeg', tag: 'Ergonomic Lumbar Command' },
+        { id: 'bc3', image: '/images/BoardstationChair3.jpeg', tag: 'Synchronized Tilt Mechanism' },
+        { id: 'bc4', image: '/images/BoardstationChair4.jpeg', tag: 'Chrome Base Swivel' },
+        { id: 'bc5', image: '/images/BoardstationChair5.jpeg', tag: 'High-Tensile Mesh' },
+        { id: 'bc6', image: '/images/BoardstationChair6.jpeg', tag: 'Padded Armrest Task Chair' },
+        { id: 'bc7', image: '/images/BoardstationChair7.jpeg', tag: 'High-Back Conference Chair' },
+        { id: 'bc8', image: '/images/BoardstationChair8.jpeg', tag: 'Minimalist Boardroom Chair' },
+        { id: 'bc9', image: '/images/BoardstationChair9.jpeg', tag: 'Premium Executive Leather' },
+        { id: 'bc10', image: '/images/BoardstationChair10.jpeg', tag: 'Ergonomic Task Seating' }
+      ]
+    }
+  ]
+};
+
+const barstoolCollection = {
+  title: 'BARSTOOL',
+  sections: [
+    {
+      title: 'BAR STOOLS',
+      items: [
+        { id: 'b1', image: '/images/barstool1.jpeg', tag: 'Woven Cane & Metal' },
+        { id: 'b2', image: '/images/barstool2.jpeg', tag: 'Contoured Cushion' },
+        { id: 'b3', image: '/images/barstool3.jpeg', tag: 'Gold Accent Frame' },
+        { id: 'b4', image: '/images/barstool4.jpeg', tag: 'Powder-Coated Steel' },
+        { id: 'b5', image: '/images/barstool5.jpeg', tag: 'Pneumatic Swivel' },
+        { id: 'b6', image: '/images/barstool6.jpeg', tag: 'Solid Wood Finish' },
+        { id: 'b7', image: '/images/barstool7.jpeg', tag: 'Full Back Support' },
+        { id: 'b8', image: '/images/barstool8.jpeg', tag: 'Compact Counter' }
+      ]
+    },
+    {
+      title: 'BAR TABLES',
+      items: [
+        { id: 'bt1', image: '/images/bartable1.jpeg', tag: 'Solid Wood & Steel' },
+        { id: 'bt2', image: '/images/bartable2.jpeg', tag: 'Compact Round' },
+        { id: 'bt3', image: '/images/bartable3.jpeg', tag: 'Heavy Duty Metal' },
+        { id: 'bt4', image: '/images/bartable4.jpeg', tag: 'Sleek Modern Profile' },
+        { id: 'bt5', image: '/images/bartable5.jpeg', tag: 'Hardwood Finish' }
+      ]
+    }
+  ]
+};
+
+const workstationsCollection = {
+  title: 'WORKSTATION CHAIRS',
+  sections: [
+    {
+      title: 'WORKSTATION & TASK SEATING',
+      items: [
+        { id: 'wc1', image: '/images/workstationchair1.jpeg', tag: 'High-Tensile Mesh' },
+        { id: 'wc2', image: '/images/workstationchair2.jpeg', tag: 'Ergonomic Lumbar Support' },
+        { id: 'wc3', image: '/images/workstationchair3.jpeg', tag: 'Synchronized Tilt' },
+        { id: 'wc4', image: '/images/workstationchair4.jpeg', tag: 'Adjustable Armrests' },
+        { id: 'wc5', image: '/images/workstationchair5.jpeg', tag: 'Breathable Backrest' },
+        { id: 'wc6', image: '/images/workstationchair6.jpeg', tag: 'Chrome Base Swivel' },
+        { id: 'wc7', image: '/images/workstationchair7.jpeg', tag: 'Task & Computer Seating' },
+        { id: 'wc8', image: '/images/workstationchair8.jpeg', tag: 'Executive Workstation Chair' }
+      ]
+    }
+  ]
+};
+
+const loungeCollection = {
+  title: 'LOUNGE CHAIRS & SEATING',
+  sections: [
+    {
+      title: 'LUXURY LOUNGE & RECEPTION CHAIRS',
+      items: [
+        { id: 'lc1', image: '/images/loungechair1.jpeg', tag: 'Accent Lounge Chair' },
+        { id: 'lc2', image: '/images/loungechair2.jpeg', tag: 'Soft Velvet Reception Chair' },
+        { id: 'lc3', image: '/images/loungechair3.jpeg', tag: 'High-Back Luxury Armchair' },
+        { id: 'lc4', image: '/images/loungechair4.jpeg', tag: 'Modern Minimalist Club Chair' },
+        { id: 'lc5', image: '/images/loungechair5.jpeg', tag: 'Stain-Resistant Upholstered' },
+        { id: 'lc6', image: '/images/loungechair6.jpeg', tag: 'Ergonomic Soft Cushion' },
+        { id: 'lc7', image: '/images/loungechair7.jpeg', tag: 'Executive Reception Seating' },
+        { id: 'lc8', image: '/images/loungechair8.jpeg', tag: 'Solid Wood Accent Chair' },
+        { id: 'lc9', image: '/images/loungechair9.jpeg', tag: 'Contemporary Cafe Lounge' },
+        { id: 'lc10', image: '/images/loungechair10.jpeg', tag: 'Plush Comfort Armchair' }
+      ]
+    }
+  ]
+};
+
+const schoolDesksCollection = {
+  title: 'SCHOOL DESKS',
+  sections: [
+    {
+      title: 'CLASSROOM & INSTITUTIONAL SEATING',
+      items: [
+        { id: 's1', image: '/images/school_desks.jpg', tag: 'Heavy Duty Steel Bench' }
+      ]
+    }
+  ]
+};
+
 const CATEGORIES_DATA = {
-  barstool: {
-    title: 'BARSTOOL',
-    sections: [
-      {
-        title: 'BAR STOOLS',
-        items: [
-          { id: 'b1', image: '/images/barstool1.jpeg', tag: 'Woven Cane & Metal' },
-          { id: 'b2', image: '/images/barstool2.jpeg', tag: 'Contoured Cushion' },
-          { id: 'b3', image: '/images/barstool3.jpeg', tag: 'Gold Accent Frame' },
-          { id: 'b4', image: '/images/barstool4.jpeg', tag: 'Powder-Coated Steel' },
-          { id: 'b5', image: '/images/barstool5.jpeg', tag: 'Pneumatic Swivel' },
-          { id: 'b6', image: '/images/barstool6.jpeg', tag: 'Solid Wood Finish' },
-          { id: 'b7', image: '/images/barstool7.jpeg', tag: 'Full Back Support' },
-          { id: 'b8', image: '/images/barstool8.jpeg', tag: 'Compact Counter' }
-        ]
-      },
-      {
-        title: 'BAR TABLES',
-        items: [
-          { id: 'bt1', image: '/images/bartable1.jpeg', tag: 'Solid Wood & Steel' },
-          { id: 'bt2', image: '/images/bartable2.jpeg', tag: 'Compact Round' },
-          { id: 'bt3', image: '/images/bartable3.jpeg', tag: 'Heavy Duty Metal' },
-          { id: 'bt4', image: '/images/bartable4.jpeg', tag: 'Sleek Modern Profile' },
-          { id: 'bt5', image: '/images/bartable5.jpeg', tag: 'Hardwood Finish' }
-        ]
-      }
-    ]
-  },
-  workstations: {
-    title: 'WORKSTATION CHAIRS',
-    sections: [
-      {
-        title: 'WORKSTATION & TASK SEATING',
-        items: [
-          { id: 'wc1', image: '/images/workstationchair1.jpeg', tag: 'High-Tensile Mesh' },
-          { id: 'wc2', image: '/images/workstationchair2.jpeg', tag: 'Ergonomic Lumbar Support' },
-          { id: 'wc3', image: '/images/workstationchair3.jpeg', tag: 'Synchronized Tilt' },
-          { id: 'wc4', image: '/images/workstationchair4.jpeg', tag: 'Adjustable Armrests' },
-          { id: 'wc5', image: '/images/workstationchair5.jpeg', tag: 'Breathable Backrest' },
-          { id: 'wc6', image: '/images/workstationchair6.jpeg', tag: 'Chrome Base Swivel' },
-          { id: 'wc7', image: '/images/workstationchair7.jpeg', tag: 'Task & Computer Seating' },
-          { id: 'wc8', image: '/images/workstationchair8.jpeg', tag: 'Executive Workstation Chair' }
-        ]
-      }
-    ]
-  },
-  'executive-chairs': {
-    title: 'EXECUTIVE & BOARDROOM CHAIRS',
-    sections: [
-      {
-        title: 'EXECUTIVE & BOARDROOM SEATING',
-        items: [
-          { id: 'bc1', image: '/images/BoardstationChair1.jpeg', tag: 'Leatherette High-Back' },
-          { id: 'bc2', image: '/images/BoardstationChair2.jpeg', tag: 'Ergonomic Lumbar Command' },
-          { id: 'bc3', image: '/images/BoardstationChair3.jpeg', tag: 'Synchronized Tilt Mechanism' },
-          { id: 'bc4', image: '/images/BoardstationChair4.jpeg', tag: 'Chrome Base Swivel' },
-          { id: 'bc5', image: '/images/BoardstationChair5.jpeg', tag: 'High-Tensile Mesh' },
-          { id: 'bc6', image: '/images/BoardstationChair6.jpeg', tag: 'Padded Armrest Task Chair' },
-          { id: 'bc7', image: '/images/BoardstationChair7.jpeg', tag: 'High-Back Conference Chair' },
-          { id: 'bc8', image: '/images/BoardstationChair8.jpeg', tag: 'Minimalist Boardroom Chair' },
-          { id: 'bc9', image: '/images/BoardstationChair9.jpeg', tag: 'Premium Executive Leather' },
-          { id: 'bc10', image: '/images/BoardstationChair10.jpeg', tag: 'Ergonomic Task Seating' }
-        ]
-      }
-    ]
-  },
-  lounge: {
-    title: 'LOUNGE CHAIRS & SEATING',
-    sections: [
-      {
-        title: 'LUXURY LOUNGE & RECEPTION CHAIRS',
-        items: [
-          { id: 'lc1', image: '/images/loungechair1.jpeg', tag: 'Accent Lounge Chair' },
-          { id: 'lc2', image: '/images/loungechair2.jpeg', tag: 'Soft Velvet Reception Chair' },
-          { id: 'lc3', image: '/images/loungechair3.jpeg', tag: 'High-Back Luxury Armchair' },
-          { id: 'lc4', image: '/images/loungechair4.jpeg', tag: 'Modern Minimalist Club Chair' },
-          { id: 'lc5', image: '/images/loungechair5.jpeg', tag: 'Stain-Resistant Upholstered' },
-          { id: 'lc6', image: '/images/loungechair6.jpeg', tag: 'Ergonomic Soft Cushion' },
-          { id: 'lc7', image: '/images/loungechair7.jpeg', tag: 'Executive Reception Seating' },
-          { id: 'lc8', image: '/images/loungechair8.jpeg', tag: 'Solid Wood Accent Chair' },
-          { id: 'lc9', image: '/images/loungechair9.jpeg', tag: 'Contemporary Cafe Lounge' },
-          { id: 'lc10', image: '/images/loungechair10.jpeg', tag: 'Plush Comfort Armchair' }
-        ]
-      }
-    ]
-  },
-  'boardroom-tables': {
-    title: 'BOARDROOM TABLES',
-    sections: [
-      {
-        title: 'CONFERENCE & STRATEGY TABLES',
-        items: [
-          { id: 't1', image: '/images/collaborative_desk.jpg', tag: 'Pre-laminated Wood' },
-          { id: 't2', image: '/images/custom_workstation.jpg', tag: 'Wireway Cable System' }
-        ]
-      }
-    ]
-  },
-  'school-desks': {
-    title: 'SCHOOL DESKS',
-    sections: [
-      {
-        title: 'CLASSROOM & INSTITUTIONAL SEATING',
-        items: [
-          { id: 's1', image: '/images/school_desks.jpg', tag: 'Heavy Duty Steel Bench' }
-        ]
-      }
-    ]
-  }
+  barstool: barstoolCollection,
+  workstations: workstationsCollection,
+  workstation: workstationsCollection,
+
+  // Executive Chairs aliases
+  executive: executiveChairsCollection,
+  'executive-chair': executiveChairsCollection,
+  'executive-chairs': executiveChairsCollection,
+  executivechairs: executiveChairsCollection,
+
+  // Boardstation Chairs aliases
+  boardstation: boardstationChairsCollection,
+  'boardstation-chair': boardstationChairsCollection,
+  'boardstation-chairs': boardstationChairsCollection,
+  boardstationchairs: boardstationChairsCollection,
+  boardroom: boardstationChairsCollection,
+  'boardroom-tables': boardstationChairsCollection,
+
+  // Lounge Chairs aliases
+  lounge: loungeCollection,
+  'lounge-chairs': loungeCollection,
+
+  // School desks
+  'school-desks': schoolDesksCollection
 };
 
 export default function CollectionCategoryPage({ categoryKey, onNavigateBack }) {
-  const category = CATEGORIES_DATA[categoryKey] || CATEGORIES_DATA.barstool;
+  const normalizedKey = (categoryKey || '').toLowerCase().trim();
+  const category = CATEGORIES_DATA[normalizedKey] || CATEGORIES_DATA['executive-chairs'];
 
   return (
     <div style={{ background: '#FFFFFF', minHeight: '100vh', paddingBottom: '1.5rem', paddingTop: '2rem' }}>
@@ -160,7 +199,7 @@ export default function CollectionCategoryPage({ categoryKey, onNavigateBack }) 
                 gap: '0.75rem',
                 borderBottom: '2px solid #C5A075',
                 paddingBottom: '0.5rem',
-                maxWidth: '360px'
+                maxWidth: '380px'
               }}>
                 {section.title}
               </div>

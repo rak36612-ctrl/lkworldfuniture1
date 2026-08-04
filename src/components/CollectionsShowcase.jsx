@@ -7,15 +7,15 @@ const CATEGORY_CARDS = [
     key: 'executive-chairs',
     title: 'Executive Chairs',
     sub: 'Command comfort. Lead with style.',
-    image: '/images/boardroom_chair.jpg',
+    image: '/images/ExecutiveChair1.jpeg',
     icon: <Armchair size={26} color="#C5A075" strokeWidth={1.5} />
   },
   {
     id: 2,
-    key: 'boardroom-tables',
-    title: 'Boardroom Tables',
+    key: 'boardstation-chairs',
+    title: 'Boardstation Chairs',
     sub: 'Designed for strategy. Built to impress.',
-    image: '/images/collaborative_desk.jpg',
+    image: '/images/BoardstationChair1.jpeg',
     icon: <Layout size={26} color="#C5A075" strokeWidth={1.5} />
   },
   {

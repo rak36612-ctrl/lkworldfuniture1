@@ -141,8 +141,8 @@ export default function Navbar({ onOpenQuoteModal, onSelectCategory, activeCateg
                 <button onClick={() => handleCategoryClick('executive-chairs')} className="dropdown-item">
                   EXECUTIVE CHAIRS
                 </button>
-                <button onClick={() => handleCategoryClick('boardroom-tables')} className="dropdown-item">
-                  BOARDROOM TABLES
+                <button onClick={() => handleCategoryClick('boardstation-chairs')} className="dropdown-item">
+                  BOARDSTATION CHAIRS
                 </button>
                 <button onClick={() => handleCategoryClick('workstations')} className="dropdown-item">
                   WORKSTATION CHAIRS
@@ -225,8 +225,8 @@ export default function Navbar({ onOpenQuoteModal, onSelectCategory, activeCateg
           <button onClick={() => handleCategoryClick('executive-chairs')} className="mobile-nav-sublink">
             • EXECUTIVE CHAIRS
           </button>
-          <button onClick={() => handleCategoryClick('boardroom-tables')} className="mobile-nav-sublink">
-            • BOARDROOM TABLES
+          <button onClick={() => handleCategoryClick('boardstation-chairs')} className="mobile-nav-sublink">
+            • BOARDSTATION CHAIRS
           </button>
           <button onClick={() => handleCategoryClick('workstations')} className="mobile-nav-sublink">
             • WORKSTATIONS
