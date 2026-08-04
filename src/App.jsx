@@ -62,7 +62,7 @@ export default function App() {
         activeCategory={activeCategory}
       />
 
-      <main style={{ paddingBottom: 0 }}>
+      <main style={{ paddingBottom: 0, paddingTop: 'clamp(64px, 9vw, 96px)' }}>
         {activeCategory ? (
           /* Dedicated Collection Category Page matching Promax template screenshot */
           <CollectionCategoryPage 

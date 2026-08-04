@@ -32,11 +32,12 @@ export default function Navbar({ onOpenQuoteModal, onSelectCategory, activeCateg
 
   return (
     <header style={{
-      position: 'sticky',
+      position: 'fixed',
       top: 0,
       left: 0,
       right: 0,
-      zIndex: 1000,
+      width: '100%',
+      zIndex: 100001,
       padding: '0.65rem 0',
       background: scrolled ? 'rgba(255, 255, 255, 0.98)' : 'rgba(247, 245, 240, 0.96)',
       backdropFilter: 'blur(12px)',
