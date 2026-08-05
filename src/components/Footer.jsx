@@ -46,16 +46,16 @@ export default function Footer() {
           </div>
 
           {/* Subtitle statement */}
-          <p style={{
-            fontSize: '0.92rem',
-            color: '#5C6E6A',
-            lineHeight: 1.6,
-            maxWidth: '460px',
-            margin: '0 auto 1.25rem',
-            fontFamily: 'var(--font-body)'
+          <div style={{
+            fontFamily: 'var(--font-subtitle)',
+            fontSize: 'clamp(1.75rem, 5vw, 2.5rem)',
+            color: '#B08C5B',
+            marginTop: '0.4rem',
+            marginBottom: '1.25rem',
+            lineHeight: 1
           }}>
-            Crafting the future of workspace comfort through design-led ergonomic excellence.
-          </p>
+            Order a design today
+          </div>
 
           {/* Contact email / phone */}
           <div style={{ marginBottom: '1.75rem' }}>

@@ -84,8 +84,8 @@ export default function Navbar({ onOpenQuoteModal, onSelectCategory, activeCateg
             }}>
               WORLD1
             </div>
-            <div style={{ fontSize: '0.55rem', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#687A76', fontWeight: '600', marginTop: '1px' }}>
-              THE CUSTOM DESTINATION
+            <div style={{ fontFamily: 'var(--font-subtitle)', fontSize: '1.05rem', color: '#B08C5B', lineHeight: 1, marginTop: '2px' }}>
+              Order a design today
             </div>
           </div>
         </a>

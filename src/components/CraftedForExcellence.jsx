@@ -42,14 +42,14 @@ export default function CraftedForExcellence() {
           </h2>
 
           <p style={{
-            fontSize: '1rem',
-            color: '#5C6E6A',
+            fontSize: '1.5rem',
+            color: '#B08C5B',
             maxWidth: '520px',
             margin: '0 auto',
-            lineHeight: 1.6
+            fontFamily: 'var(--font-subtitle)',
+            lineHeight: 1.3
           }}>
-            Premium materials. Timeless design. <br />
-            Built for comfort. Made for generations.
+            Order a design today
           </p>
         </div>
 

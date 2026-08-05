@@ -150,17 +150,17 @@ export default function Preloader({ onLoaded }) {
         {/* Subtitle */}
         <p
           style={{
-            color: '#756755',
-            fontSize: 'clamp(0.62rem, 2vw, 0.72rem)',
-            letterSpacing: '0.22em',
-            textTransform: 'uppercase',
-            marginBottom: '2.5rem',
-            fontWeight: '700',
+            color: '#B08C5B',
+            fontSize: 'clamp(1.35rem, 4vw, 1.85rem)',
+            fontFamily: 'var(--font-subtitle)',
+            marginBottom: '2rem',
             animation: 'fadeInUp 0.8s ease 0.35s forwards',
             opacity: 0,
+            textTransform: 'none',
+            letterSpacing: '0.02em',
           }}
         >
-          CRAFTED FOR EXCELLENCE &bull; BENGALURU
+          Order a design today
         </p>
 
         {/* Gold Pill Loading Bar with Moving Light Spark */}
