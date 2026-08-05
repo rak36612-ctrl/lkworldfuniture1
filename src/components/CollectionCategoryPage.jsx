@@ -110,14 +110,22 @@ const barstoolCollection = {
     {
       title: 'BAR STOOLS',
       items: [
-        { id: 'b1', image: '/images/barstool1.jpeg', tag: 'Woven Cane & Metal' },
-        { id: 'b2', image: '/images/barstool2.jpeg', tag: 'Contoured Cushion' },
-        { id: 'b3', image: '/images/barstool3.jpeg', tag: 'Gold Accent Frame' },
-        { id: 'b4', image: '/images/barstool4.jpeg', tag: 'Powder-Coated Steel' },
-        { id: 'b5', image: '/images/barstool5.jpeg', tag: 'Pneumatic Swivel' },
-        { id: 'b6', image: '/images/barstool6.jpeg', tag: 'Solid Wood Finish' },
-        { id: 'b7', image: '/images/barstool7.jpeg', tag: 'Full Back Support' },
-        { id: 'b8', image: '/images/barstool8.jpeg', tag: 'Compact Counter' }
+        { id: 'b3', image: '/images/barstool3.jpeg', tag: 'Gold Accent Frame Bar Stool' },
+        { id: 'b4', image: '/images/barstool4.jpeg', tag: 'Powder-Coated Steel Stool' },
+        { id: 'b5', image: '/images/barstool5.jpeg', tag: 'Pneumatic Swivel Bar Stool' },
+        { id: 'b6', image: '/images/barstool6.jpeg', tag: 'Solid Wood Finish Stool' },
+        { id: 'b7', image: '/images/barstool7.jpeg', tag: 'Full Back Support Bar Stool' },
+        { id: 'b8', image: '/images/barstool8.jpeg', tag: 'Compact Counter Stool' },
+        { id: 'b9', image: '/images/barstool9.jpeg', tag: 'Modern Ergonomic Bar Stool' },
+        { id: 'b10', image: '/images/barstool10.jpeg', tag: 'Contemporary High-Counter Seat' },
+        { id: 'b11', image: '/images/barstool11.jpeg', tag: 'Padded Upholstered Bar Stool' },
+        { id: 'b12', image: '/images/barstool12.jpeg', tag: 'Industrial Metal Bar Stool' },
+        { id: 'b13', image: '/images/barstool13.jpeg', tag: 'Swivel Gas-Lift Counter Seat' },
+        { id: 'b14', image: '/images/barstool14.jpeg', tag: 'Executive High-Back Bar Stool' },
+        { id: 'b15', image: '/images/barstool15.jpeg', tag: 'Minimalist Bistro Bar Stool' },
+        { id: 'b16', image: '/images/barstool16.jpeg', tag: 'Soft Cushion Cafe Counter Seat' },
+        { id: 'b17', image: '/images/barstool17.jpeg', tag: 'Heavy Duty Steel Base Stool' },
+        { id: 'b18', image: '/images/barstool18.jpeg', tag: 'Premium Commercial Bar Stool' }
       ]
     },
     {
@@ -215,7 +223,14 @@ const cafeteriaChairsCollection = {
         { id: 'cc7', image: '/images/cafeteriachair7.jpeg', tag: 'Heavy Duty Metal Frame Chair' },
         { id: 'cc8', image: '/images/cafeteriachair8.jpeg', tag: 'Contemporary Bistro Chair' },
         { id: 'cc9', image: '/images/cafeteriachair9.jpeg', tag: 'Industrial Dining Chair' },
-        { id: 'cc10', image: '/images/cafeteriachair10.jpeg', tag: 'Premium Cafeteria Chair' }
+        { id: 'cc10', image: '/images/cafeteriachair10.jpeg', tag: 'Premium Cafeteria Chair' },
+        { id: 'cc11', image: '/images/cafeteriachair11.jpeg', tag: 'High-Density Shell Cafe Chair' },
+        { id: 'cc12', image: '/images/cafeteriachair12.jpeg', tag: 'Modern Molded Dining Seat' },
+        { id: 'cc13', image: '/images/cafeteriachair13.jpeg', tag: 'Ergonomic Food Court Chair' },
+        { id: 'cc14', image: '/images/cafeteriachair14.jpeg', tag: 'Stackable Commercial Chair' },
+        { id: 'cc15', image: '/images/cafeteriachair15.jpeg', tag: 'Padded Upholstered Cafe Chair' },
+        { id: 'cc16', image: '/images/cafeteriachair16.jpeg', tag: 'Contemporary Bistro Dining' },
+        { id: 'cc17', image: '/images/cafeteriachair17.jpeg', tag: 'Heavy Duty Steel Base Shell' }
       ]
     }
   ]

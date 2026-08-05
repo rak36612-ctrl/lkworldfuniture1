@@ -71,7 +71,7 @@ const CATEGORY_CARDS = [
     key: 'barstool',
     title: 'Bar Stools & Tables',
     sub: 'Woven cane & sleek metal aesthetic.',
-    image: '/images/barstool2.jpeg',
+    image: '/images/barstool3.jpeg',
     icon: <Wine size={26} color="#C5A075" strokeWidth={1.5} />
   },
   {
