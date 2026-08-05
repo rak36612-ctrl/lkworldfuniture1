@@ -47,7 +47,7 @@ export default function MobileBottomNav() {
 
         {/* Collections */}
         <a 
-          href="#category-barstool" 
+          href="#collection" 
           style={{
             display: 'flex',
             flexDirection: 'column',

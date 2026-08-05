@@ -30,10 +30,15 @@ export default function TopBar() {
         <span>+91 88844 87020</span>
       </a>
 
-      <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'rgba(255, 255, 255, 0.85)' }}>
+      <a 
+        href="https://www.google.com/maps/search/?api=1&query=LK+Furniture+World1+1st+Main+Road+Mysore+Rd+opposite+Beereshwara+Temple+Bapuji+Nagar+Bengaluru+Karnataka+560026"
+        target="_blank" 
+        rel="noopener noreferrer"
+        style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'rgba(255, 255, 255, 0.85)', textDecoration: 'none' }}
+      >
         <MapPin size={13} color="#C5A075" />
-        <span>Bengaluru, Karnataka</span>
-      </div>
+        <span>Mysore Rd, Bengaluru 📍</span>
+      </a>
     </div>
   );
 }

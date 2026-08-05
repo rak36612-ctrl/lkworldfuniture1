@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MapPin, Phone, Mail, Instagram, Clock, Send, CheckCircle2, MessageCircle } from 'lucide-react';
+import { MapPin, Phone, Mail, Instagram, Clock, Send, CheckCircle2, MessageCircle, Navigation } from 'lucide-react';
 
 export default function ContactAndLocation() {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -77,6 +77,29 @@ Message: ${formData.message}`;
                   <div style={{ fontSize: '0.95rem', color: '#E2ECE9', lineHeight: 1.5, marginTop: '0.25rem' }}>
                     #1, 1st Main Road, Mysore Rd, opposite Beereshwara Temple, Bapuji Nagar, Bengaluru, Karnataka 560026
                   </div>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=LK+Furniture+World1+1st+Main+Road+Mysore+Rd+opposite+Beereshwara+Temple+Bapuji+Nagar+Bengaluru+Karnataka+560026"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.4rem',
+                      marginTop: '0.75rem',
+                      background: 'rgba(197, 160, 117, 0.2)',
+                      color: '#C5A075',
+                      border: '1px solid #C5A075',
+                      padding: '0.4rem 0.9rem',
+                      borderRadius: '999px',
+                      fontSize: '0.75rem',
+                      fontWeight: '800',
+                      letterSpacing: '0.05em',
+                      textDecoration: 'none',
+                      transition: 'all 0.25s ease'
+                    }}
+                  >
+                    <Navigation size={13} /> OPEN IN GOOGLE MAPS
+                  </a>
                 </div>
               </div>
 
@@ -143,11 +166,12 @@ Message: ${formData.message}`;
               overflow: 'hidden',
               boxShadow: 'var(--shadow-sm)',
               height: '240px',
-              border: '1px solid rgba(24, 59, 53, 0.1)'
+              border: '1px solid rgba(24, 59, 53, 0.1)',
+              position: 'relative'
             }}>
               <iframe 
                 title="LK Furniture World1 Location Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.3512863953556!2d77.5385!3d12.9558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU3JzIwLjkiTiA3N8KwMzInMTguNiJF!5e0!3m2!1sen!2sin!4v1625000000000!5m2!1sen!2sin"
+                src="https://maps.google.com/maps?q=LK%20Furniture%20World1,%201st%20Main%20Road,%20Mysore%20Rd,%20opposite%20Beereshwara%20Temple,%20Bapuji%20Nagar,%20Bengaluru,%20Karnataka%20560026&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
