@@ -7,7 +7,7 @@ const CATEGORY_CARDS = [
     key: 'executive-chairs',
     title: 'Executive Chairs',
     sub: 'Command comfort. Lead with style.',
-    image: '/images/ExecutiveChair1.jpeg',
+    image: '/images/og-executivechair1.jpeg',
     icon: <Armchair size={26} color="#C5A075" strokeWidth={1.5} />
   },
   {
@@ -16,6 +16,22 @@ const CATEGORY_CARDS = [
     title: 'Boss Chairs',
     sub: 'Premium high-command seating for leaders.',
     image: '/images/BossChair1.jpeg',
+    icon: <Armchair size={26} color="#C5A075" strokeWidth={1.5} />
+  },
+  {
+    id: 13,
+    key: 'visitor-chairs',
+    title: 'Visitor Chairs',
+    sub: 'Sleek guest & office visitor seating.',
+    image: '/images/visitingchair1.jpeg',
+    icon: <Armchair size={26} color="#C5A075" strokeWidth={1.5} />
+  },
+  {
+    id: 14,
+    key: 'waiting-chairs',
+    title: 'Waiting Chairs',
+    sub: 'Heavy-duty steel benches for lobbies & reception.',
+    image: '/images/waitingchair1.jpeg',
     icon: <Armchair size={26} color="#C5A075" strokeWidth={1.5} />
   },
   {
@@ -39,7 +55,7 @@ const CATEGORY_CARDS = [
     key: 'writing-pad-chairs',
     title: 'Writing Pad Chairs',
     sub: 'Training room & seminar institutional seating.',
-    image: '/images/writingpadchair1.jpeg',
+    image: '/images/writingpadchair1.jpeg?v=2',
     icon: <GraduationCap size={26} color="#C5A075" strokeWidth={1.5} />
   },
   {

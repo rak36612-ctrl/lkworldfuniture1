@@ -7,16 +7,15 @@ const executiveChairsCollection = {
     {
       title: 'EXECUTIVE SEATING',
       items: [
-        { id: 'ec1', image: '/images/ExecutiveChair1.jpeg', tag: 'High-Back Executive Leather' },
-        { id: 'ec2', image: '/images/ExecutiveChair2.jpeg', tag: 'Ergonomic Command Chair' },
-        { id: 'ec3', image: '/images/ExecutiveChair3.jpeg', tag: 'Synchronized Tilt Mechanism' },
-        { id: 'ec4', image: '/images/ExecutiveChair4.jpeg', tag: 'Chrome Base Swivel' },
-        { id: 'ec5', image: '/images/ExecutiveChair5.jpeg', tag: 'High-Tensile Mesh Backrest' },
-        { id: 'ec6', image: '/images/ExecutiveChair6.jpeg', tag: 'Padded Armrest Executive' },
-        { id: 'ec7', image: '/images/ExecutiveChair7.jpeg', tag: 'Premium Leatherette High-Back' },
-        { id: 'ec8', image: '/images/ExecutiveChair8.jpeg', tag: 'Contoured Lumbar Support' },
-        { id: 'ec9', image: '/images/ExecutiveChair9.jpeg', tag: 'Executive Office Command' },
-        { id: 'ec10', image: '/images/ExecutiveChair10.jpeg', tag: 'Luxury Ergonomic Swivel' }
+        { id: 'og_ec1', image: '/images/og-executivechair1.jpeg', tag: 'High-Back Executive Leather' },
+        { id: 'og_ec2', image: '/images/og-executivechair2.jpeg', tag: 'Ergonomic Command Chair' },
+        { id: 'og_ec3', image: '/images/og-executivechair3.jpeg', tag: 'Synchronized Tilt Mechanism' },
+        { id: 'og_ec4', image: '/images/og-executivechair4.jpeg', tag: 'Chrome Base Swivel' },
+        { id: 'og_ec5', image: '/images/og-executivechair5.jpeg', tag: 'High-Tensile Mesh Backrest' },
+        { id: 'og_ec6', image: '/images/og-executivechair6.jpeg', tag: 'Padded Armrest Executive' },
+        { id: 'og_ec7', image: '/images/og-executivechair7.jpeg', tag: 'Premium Leatherette High-Back' },
+        { id: 'og_ec8', image: '/images/og-executivechair8.jpeg', tag: 'Contoured Lumbar Support' },
+        { id: 'og_ec9', image: '/images/og-executivechair9.jpeg', tag: 'Executive Office Command' }
       ]
     }
   ]
@@ -37,7 +36,48 @@ const bossChairsCollection = {
         { id: 'bch7', image: '/images/BossChair7.jpeg', tag: 'High-Tensile Mesh Boss' },
         { id: 'bch8', image: '/images/BossChair8.jpeg', tag: 'Synchronized Tilt Boss' },
         { id: 'bch9', image: '/images/BossChair9.jpeg', tag: 'Premium Leather Boss Armchair' },
-        { id: 'bch10', image: '/images/BossChair10.jpeg', tag: 'Minimalist Command Boss Chair' }
+        { id: 'bch10', image: '/images/BossChair10.jpeg', tag: 'Minimalist Command Boss Chair' },
+        { id: 'bch11', image: '/images/bosschair11.jpeg', tag: 'High-Back Heavy-Duty Boss' },
+        { id: 'bch12', image: '/images/bosschair12.jpeg', tag: 'Ergonomic Executive Boss' },
+        { id: 'bch13', image: '/images/bosschair13.jpeg', tag: 'Ultra-Comfort Boss Swivel' },
+        { id: 'bch14', image: '/images/bosschair14.jpeg', tag: 'Solid Base Reclining Boss' },
+        { id: 'bch15', image: '/images/bosschair15.jpeg', tag: 'Plush Leather Boss Seat' },
+        { id: 'bch16', image: '/images/bosschair16.jpeg', tag: 'Contemporary Command Boss' },
+        { id: 'bch17', image: '/images/bosschair17.jpeg', tag: 'Premium Custom Boss Chair' }
+      ]
+    }
+  ]
+};
+
+const visitorChairsCollection = {
+  title: 'VISITOR CHAIRS',
+  sections: [
+    {
+      title: 'VISITOR & GUEST SEATING',
+      items: [
+        { id: 'vc1', image: '/images/visitingchair1.jpeg', tag: 'Sleek Cantilever Visitor Chair' },
+        { id: 'vc2', image: '/images/visitingchair2.jpeg', tag: 'Padded Armrest Guest Chair' },
+        { id: 'vc3', image: '/images/visitingchair3.jpeg', tag: 'Ergonomic Mesh Visitor Chair' },
+        { id: 'vc4', image: '/images/visitingchair4.jpeg', tag: 'Leatherette Executive Guest Chair' },
+        { id: 'vc5', image: '/images/visitingchair5.jpeg', tag: 'Heavy Duty Metal Frame Chair' },
+        { id: 'vc6', image: '/images/visitingchair6.jpeg', tag: 'Compact Office Visitor Chair' },
+        { id: 'vc7', image: '/images/visitingchair7.jpeg', tag: 'Premium Reception Guest Seating' }
+      ]
+    }
+  ]
+};
+
+const waitingChairsCollection = {
+  title: 'WAITING CHAIRS',
+  sections: [
+    {
+      title: 'PUBLIC & LOBBY WAITING SEATING',
+      items: [
+        { id: 'wc_w1', image: '/images/waitingchair1.jpeg', tag: '3-Seater Steel Waiting Bench' },
+        { id: 'wc_w2', image: '/images/waitingchair2.jpeg', tag: 'Padded Airport & Hospital Bench' },
+        { id: 'wc_w3', image: '/images/waitingchair3.jpeg', tag: 'Perforated Metal Lobby Bench' },
+        { id: 'wc_w4', image: '/images/waitingchair4.jpeg', tag: 'Commercial Reception Waiting Seat' },
+        { id: 'wc_w5', image: '/images/waitingchair5.jpeg', tag: 'Heavy-Duty Institutional Bench' }
       ]
     }
   ]
@@ -127,7 +167,15 @@ const loungeCollection = {
         { id: 'lc7', image: '/images/loungechair7.jpeg', tag: 'Executive Reception Seating' },
         { id: 'lc8', image: '/images/loungechair8.jpeg', tag: 'Solid Wood Accent Chair' },
         { id: 'lc9', image: '/images/loungechair9.jpeg', tag: 'Contemporary Cafe Lounge' },
-        { id: 'lc10', image: '/images/loungechair10.jpeg', tag: 'Plush Comfort Armchair' }
+        { id: 'lc10', image: '/images/loungechair10.jpeg', tag: 'Plush Comfort Armchair' },
+        { id: 'lc11', image: '/images/loungechair11.jpeg', tag: 'Luxury Velvet Lounge Chair' },
+        { id: 'lc12', image: '/images/loungechair12.jpeg', tag: 'High-Back Executive Lounge' },
+        { id: 'lc13', image: '/images/loungechair13.jpeg', tag: 'Contoured Accent Armchair' },
+        { id: 'lc14', image: '/images/loungechair14.jpeg', tag: 'Modern Minimalist Lounge' },
+        { id: 'lc15', image: '/images/loungechair15.jpeg', tag: 'Premium Leatherette Lounge' },
+        { id: 'lc16', image: '/images/loungechair16.jpeg', tag: 'Compact Lobby Lounge Chair' },
+        { id: 'lc17', image: '/images/loungechair17.jpeg', tag: 'Soft Cushion Reception Seat' },
+        { id: 'lc18', image: '/images/loungechair18.jpeg', tag: 'Contemporary Comfort Chair' }
       ]
     }
   ]
@@ -179,16 +227,12 @@ const writingPadChairsCollection = {
     {
       title: 'TRAINING & SEMINAR SEATING',
       items: [
-        { id: 'wp1', image: '/images/writingpadchair1.jpeg', tag: 'Attached Folding Pad' },
-        { id: 'wp2', image: '/images/writingpadchair2.jpeg', tag: 'Institutional Training Chair' },
-        { id: 'wp3', image: '/images/writingpadchair3.jpeg', tag: 'Seminar Room Pad Chair' },
-        { id: 'wp4', image: '/images/writingpadchair4.jpeg', tag: 'Ergonomic Mesh Pad Chair' },
-        { id: 'wp5', image: '/images/writingpadchair5.jpeg', tag: 'Classroom Lecture Chair' },
-        { id: 'wp6', image: '/images/writingpadchair6.jpeg', tag: 'Padded Arm Pad Chair' },
-        { id: 'wp7', image: '/images/writingpadchair7.jpeg', tag: 'Heavy Duty Steel Base' },
-        { id: 'wp8', image: '/images/writingpadchair8.jpeg', tag: 'Compact Seminar Seating' },
-        { id: 'wp9', image: '/images/writingpadchair9.jpeg', tag: 'Executive Training Chair' },
-        { id: 'wp10', image: '/images/writingpadchair10.jpeg', tag: 'Premium Writing Pad Chair' }
+        { id: 'wp1', image: '/images/writingpadchair1.jpeg?v=2', tag: 'Attached Folding Pad' },
+        { id: 'wp2', image: '/images/writingpadchair2.jpeg?v=2', tag: 'Institutional Training Chair' },
+        { id: 'wp3', image: '/images/writingpadchair3.jpeg?v=2', tag: 'Seminar Room Pad Chair' },
+        { id: 'wp4', image: '/images/writingpadchair4.jpeg?v=2', tag: 'Ergonomic Mesh Pad Chair' },
+        { id: 'wp5', image: '/images/writingpadchair5.jpeg?v=2', tag: 'Classroom Lecture Chair' },
+        { id: 'wp6', image: '/images/writingpadchair6.jpeg?v=2', tag: 'Padded Arm Pad Chair' }
       ]
     }
   ]
@@ -249,16 +293,28 @@ const CATEGORIES_DATA = {
   'office-chairs': officeWorkstationCollection,
   office: officeWorkstationCollection,
 
-  // Executive Chairs (Strictly ExecutiveChair1-10)
+  // Executive Chairs (Strictly og-executivechair1-9)
   executive: executiveChairsCollection,
   'executive-chair': executiveChairsCollection,
   'executive-chairs': executiveChairsCollection,
   executivechairs: executiveChairsCollection,
 
-  // Boss Chairs (Strictly BossChair1-10)
+  // Boss Chairs (Strictly BossChair1-10 + bosschair11-17)
   boss: bossChairsCollection,
   'boss-chairs': bossChairsCollection,
   bosschairs: bossChairsCollection,
+
+  // Visitor Chairs (Strictly visitingchair1-7)
+  'visitor-chairs': visitorChairsCollection,
+  visitor: visitorChairsCollection,
+  visiting: visitorChairsCollection,
+  visitorchairs: visitorChairsCollection,
+  'visiting-chairs': visitorChairsCollection,
+
+  // Waiting Chairs (Strictly waitingchair1-5)
+  'waiting-chairs': waitingChairsCollection,
+  waiting: waitingChairsCollection,
+  waitingchairs: waitingChairsCollection,
 
   // Boardstation Chairs
   boardstation: boardstationChairsCollection,
@@ -283,7 +339,7 @@ const CATEGORIES_DATA = {
   bunker: bunkerCotBedsCollection,
   bunkercot: bunkerCotBedsCollection,
 
-  // Writing Pad Chairs (Strictly writingpadchair1-10)
+  // Writing Pad Chairs (Strictly writingpadchair1-6)
   'writing-pad-chairs': writingPadChairsCollection,
   writingpadchairs: writingPadChairsCollection,
   writingpad: writingPadChairsCollection,

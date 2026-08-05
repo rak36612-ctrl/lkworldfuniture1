@@ -167,6 +167,8 @@ export default function Footer() {
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.85rem', fontSize: '0.82rem', fontWeight: '700', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
               <li><a href="#category-executive-chairs" style={{ color: '#183B35', textDecoration: 'none' }}>EXECUTIVE CHAIRS</a></li>
               <li><a href="#category-boss-chairs" style={{ color: '#183B35', textDecoration: 'none' }}>BOSS CHAIRS</a></li>
+              <li><a href="#category-visitor-chairs" style={{ color: '#183B35', textDecoration: 'none' }}>VISITOR CHAIRS</a></li>
+              <li><a href="#category-waiting-chairs" style={{ color: '#183B35', textDecoration: 'none' }}>WAITING CHAIRS</a></li>
               <li><a href="#category-office-workstation" style={{ color: '#183B35', textDecoration: 'none' }}>OFFICE / WORKSTATION CHAIRS</a></li>
               <li><a href="#category-boardstation-chairs" style={{ color: '#183B35', textDecoration: 'none' }}>BOARDSTATION CHAIRS</a></li>
               <li><a href="#category-writing-pad-chairs" style={{ color: '#183B35', textDecoration: 'none' }}>WRITING PAD CHAIRS</a></li>
