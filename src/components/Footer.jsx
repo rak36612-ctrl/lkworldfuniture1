@@ -58,19 +58,43 @@ export default function Footer() {
           </div>
 
           {/* Contact email / phone */}
-          <div style={{ marginBottom: '1.75rem' }}>
+          <div style={{ marginBottom: '1.75rem', display: 'flex', flexDirection: 'column', gap: '0.4rem', alignItems: 'center' }}>
             <a 
-              href="mailto:info@lkfurnitureworld1.com" 
+              href="mailto:lkfurnitureworld1@gmail.com" 
               style={{
                 color: '#183B35',
-                fontWeight: '700',
-                fontSize: '0.9rem',
+                fontWeight: '800',
+                fontSize: '0.95rem',
                 textDecoration: 'none',
-                letterSpacing: '0.02em'
+                letterSpacing: '0.01em'
               }}
             >
-              info@lkfurnitureworld1.com
+              lkfurnitureworld1@gmail.com
             </a>
+            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+              <a 
+                href="mailto:harsha@workstationofficechairs.com" 
+                style={{
+                  color: '#B08C5B',
+                  fontWeight: '700',
+                  fontSize: '0.82rem',
+                  textDecoration: 'none'
+                }}
+              >
+                harsha@workstationofficechairs.com
+              </a>
+              <a 
+                href="mailto:dilipraj@workstationofficechairs.com" 
+                style={{
+                  color: '#B08C5B',
+                  fontWeight: '700',
+                  fontSize: '0.82rem',
+                  textDecoration: 'none'
+                }}
+              >
+                dilipraj@workstationofficechairs.com
+              </a>
+            </div>
           </div>
 
           {/* Circular outline social icons matching screenshot */}

@@ -143,6 +143,29 @@ Message: ${formData.message}`;
                 </div>
               </div>
 
+              {/* Official Emails */}
+              <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.25rem', alignItems: 'flex-start' }}>
+                <div style={{ background: 'rgba(197, 160, 117, 0.15)', padding: '0.6rem', borderRadius: '12px', color: 'var(--color-gold)', flexShrink: 0 }}>
+                  <Mail size={22} />
+                </div>
+                <div>
+                  <div style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--color-gold)', fontWeight: '700', letterSpacing: '0.1em' }}>
+                    OFFICIAL EMAIL ADDRESSES
+                  </div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem', marginTop: '0.35rem' }}>
+                    <a href="mailto:lkfurnitureworld1@gmail.com" style={{ color: '#FFFFFF', fontWeight: '700', fontSize: '0.92rem', textDecoration: 'none' }}>
+                      lkfurnitureworld1@gmail.com
+                    </a>
+                    <a href="mailto:harsha@workstationofficechairs.com" style={{ color: '#E2ECE9', fontWeight: '600', fontSize: '0.85rem', textDecoration: 'none' }}>
+                      harsha@workstationofficechairs.com
+                    </a>
+                    <a href="mailto:dilipraj@workstationofficechairs.com" style={{ color: '#E2ECE9', fontWeight: '600', fontSize: '0.85rem', textDecoration: 'none' }}>
+                      dilipraj@workstationofficechairs.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+
               {/* Working Hours */}
               <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
                 <div style={{ background: 'rgba(197, 160, 117, 0.15)', padding: '0.6rem', borderRadius: '12px', color: 'var(--color-gold)', flexShrink: 0 }}>
