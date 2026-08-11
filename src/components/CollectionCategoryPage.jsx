@@ -516,7 +516,7 @@ export default function CollectionCategoryPage({ categoryKey, onNavigateBack }) 
         {/* AT LAST: VIEW ENTIRE CATALOGUE BUTTON */}
         <div style={{ textAlign: 'center', paddingTop: '2.5rem', borderTop: '1px solid rgba(24, 59, 53, 0.1)' }}>
           <a
-            href="/lkfinale.pdf"
+            href="/lk_catalogue.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-gold"

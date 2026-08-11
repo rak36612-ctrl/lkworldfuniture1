@@ -222,7 +222,7 @@ export default function Footer() {
               <li><a href="#about" style={{ color: '#3A4D48', textDecoration: 'none' }}>Our Story</a></li>
               <li><a href="#craftsmanship" style={{ color: '#3A4D48', textDecoration: 'none' }}>Craftsmanship</a></li>
               <li><a href="#workshop" style={{ color: '#3A4D48', textDecoration: 'none' }}>Video Tour</a></li>
-              <li><a href="/lkfinale.pdf" target="_blank" rel="noopener noreferrer" style={{ color: '#B08C5B', fontWeight: '800', textDecoration: 'none' }}>Catalogue PDF 📄</a></li>
+              <li><a href="/lk_catalogue.pdf" target="_blank" rel="noopener noreferrer" style={{ color: '#B08C5B', fontWeight: '800', textDecoration: 'none' }}>Catalogue PDF 📄</a></li>
               <li><a href="#contact" style={{ color: '#3A4D48', textDecoration: 'none' }}>Showroom Location</a></li>
             </ul>
           </div>

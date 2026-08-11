@@ -66,7 +66,7 @@ export default function MobileBottomNav() {
 
         {/* Catalogue (Replaces Workshop) */}
         <a 
-          href="/lkfinale.pdf"
+          href="/lk_catalogue.pdf"
           target="_blank"
           rel="noopener noreferrer"
           style={{

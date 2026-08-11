@@ -180,7 +180,7 @@ export default function Navbar({ onOpenQuoteModal, onSelectCategory, activeCateg
 
           <a href="#craftsmanship" onClick={handleHomeClick} className="nav-link">CRAFTSMANSHIP</a>
           <a href="#workshop" onClick={handleHomeClick} className="nav-link">VIDEO TOUR</a>
-          <a href="/lkfinale.pdf" target="_blank" rel="noopener noreferrer" className="nav-link" style={{ color: '#C5A075', fontWeight: '800' }}>CATALOGUE PDF</a>
+          <a href="/lk_catalogue.pdf" target="_blank" rel="noopener noreferrer" className="nav-link" style={{ color: '#C5A075', fontWeight: '800' }}>CATALOGUE PDF</a>
           <a href="#contact" onClick={handleHomeClick} className="nav-link">LOCATION</a>
         </nav>
 

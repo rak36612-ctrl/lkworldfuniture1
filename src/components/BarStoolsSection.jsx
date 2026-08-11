@@ -316,7 +316,9 @@ export default function BarStoolsSection({ onOpenQuoteModal }) {
         {/* ==================== AT LAST: VIEW ENTIRE CATALOGUE BUTTON ==================== */}
         <div style={{ textAlign: 'center', paddingTop: '1.5rem' }}>
           <a
-            href="https://wa.me/918884487020?text=Hi%20LK%20Furniture%20World1%2C%20please%20send%20me%20your%20entire%20complete%20PDF%20catalogue%20with%20prices."
+            href="/lk_catalogue.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-gold"
