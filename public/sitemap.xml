@@ -1,0 +1,130 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Main Website Root (Canonical URL) -->
+  <url>
+    <loc>https://lkfurnitureworld1.in/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+
+    <!-- Brand & Factory Images -->
+    <image:image>
+      <image:loc>https://lkfurnitureworld1.in/images/Final_Logo.png</image:loc>
+      <image:title>LK Furniture World1 Official Logo</image:title>
+      <image:caption>LK Furniture World1 custom furniture showroom and factory on Mysore Road Bengaluru</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://lkfurnitureworld1.in/images/HeroImage1.png</image:loc>
+      <image:title>Custom Commercial Furniture Showcase Bengaluru</image:title>
+      <image:caption>Ergonomic office seating and custom furniture Mysore Road Bangalore</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://lkfurnitureworld1.in/images/craftsmanship_stage.jpg</image:loc>
+      <image:title>Founders Mr. Dilip Raj and Mr. Harsha - LK Furniture World1</image:title>
+      <image:caption>Crafted for excellence workshop on Mysore Road Bengaluru</image:caption>
+    </image:image>
+
+    <!-- Executive Chairs -->
+    <image:image>
+      <image:loc>https://lkfurnitureworld1.in/images/og-executivechair1.jpeg</image:loc>
+      <image:title>High-Back Executive Leather Chairs Bengaluru</image:title>
+      <image:caption>Ergonomic command executive chairs with chrome swivel base</image:caption>
+    </image:image>
+
+    <!-- Boss Chairs -->
+    <image:image>
+      <image:loc>https://lkfurnitureworld1.in/images/BossChair1.jpeg</image:loc>
+      <image:title>Luxury Boss Chairs Bangalore</image:title>
+      <image:caption>High-command leatherette boss chairs for corporate directors Mysore Road</image:caption>
+    </image:image>
+
+    <!-- Office & Workstations -->
+    <image:image>
+      <image:loc>https://lkfurnitureworld1.in/images/workstationchair1.jpeg</image:loc>
+      <image:title>Ergonomic Mesh Office Workstation Chairs Bangalore</image:title>
+      <image:caption>Breathable mesh task chairs with adjustable lumbar support</image:caption>
+    </image:image>
+
+    <!-- Boardstation Chairs -->
+    <image:image>
+      <image:loc>https://lkfurnitureworld1.in/images/BoardstationChair1.jpeg</image:loc>
+      <image:title>Boardstation &amp; Boardroom Conference Chairs Bengaluru</image:title>
+      <image:caption>Executive boardroom conference seating Mysore Road</image:caption>
+    </image:image>
+
+    <!-- Visitor Chairs -->
+    <image:image>
+      <image:loc>https://lkfurnitureworld1.in/images/visitingchair1.jpeg</image:loc>
+      <image:title>Cantilever Visitor &amp; Guest Chairs Bangalore</image:title>
+      <image:caption>Sleek metal frame visitor chairs for consultation desks and reception</image:caption>
+    </image:image>
+
+    <!-- Waiting Chairs -->
+    <image:image>
+      <image:loc>https://lkfurnitureworld1.in/images/waitingchair1.jpeg</image:loc>
+      <image:title>3-Seater Steel Waiting Benches Bengaluru</image:title>
+      <image:caption>Heavy-duty stainless steel waiting benches for clinics, hospitals, and offices</image:caption>
+    </image:image>
+
+    <!-- School Desks -->
+    <image:image>
+      <image:loc>https://lkfurnitureworld1.in/images/SchoolDesk1.jpeg</image:loc>
+      <image:title>School Desks &amp; Student Benches Manufacturer Bangalore</image:title>
+      <image:caption>Heavy-duty classroom benches and dual student desks Mysore Road Bengaluru</image:caption>
+    </image:image>
+
+    <!-- Bunker Cot Beds -->
+    <image:image>
+      <image:loc>https://lkfurnitureworld1.in/images/Bunkercot1.jpeg</image:loc>
+      <image:title>Steel Bunker Cot Beds Hostel PG Bangalore</image:title>
+      <image:caption>Dual-tier industrial metal bunk beds for hostels, PG accommodations, and dorms</image:caption>
+    </image:image>
+
+    <!-- Writing Pad Chairs -->
+    <image:image>
+      <image:loc>https://lkfurnitureworld1.in/images/writingpadchair1.jpeg</image:loc>
+      <image:title>Writing Pad Chairs Training &amp; Seminar Halls Bangalore</image:title>
+      <image:caption>Institutional student chairs with attached writing tablet</image:caption>
+    </image:image>
+
+    <!-- Restaurant Tables -->
+    <image:image>
+      <image:loc>https://lkfurnitureworld1.in/images/restauranttable1.jpeg</image:loc>
+      <image:title>Commercial Restaurant &amp; Cafe Dining Tables Bangalore</image:title>
+      <image:caption>Solid hardwood and heavy metal base dining tables for bistros and cafes</image:caption>
+    </image:image>
+
+    <!-- Cafeteria Chairs -->
+    <image:image>
+      <image:loc>https://lkfurnitureworld1.in/images/cafeteriachair1.jpeg</image:loc>
+      <image:title>Cafeteria Chairs &amp; Food Court Dining Seating Bengaluru</image:title>
+      <image:caption>Modern stackable cafe shell chairs for institutional and corporate dining</image:caption>
+    </image:image>
+
+    <!-- Bar Stools -->
+    <image:image>
+      <image:loc>https://lkfurnitureworld1.in/images/barstool3.jpeg</image:loc>
+      <image:title>Bar Stools &amp; Counter Seating Bangalore</image:title>
+      <image:caption>Pneumatic swivel and gold accent frame bar stools for cafes and lounges</image:caption>
+    </image:image>
+
+    <!-- Lounge Chairs -->
+    <image:image>
+      <image:loc>https://lkfurnitureworld1.in/images/loungechair1.jpeg</image:loc>
+      <image:title>Lounge Chairs &amp; Reception Armchairs Bangalore</image:title>
+      <image:caption>Plush velvet and leatherette accent armchairs for lobbies and executive rooms</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Official PDF Product Catalogue -->
+  <url>
+    <loc>https://lkfurnitureworld1.in/lkfinale.pdf</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

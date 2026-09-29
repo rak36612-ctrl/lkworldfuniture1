@@ -1,0 +1,14 @@
+# Robots.txt for LK Furniture World1
+# https://lkfurnitureworld1.in/
+
+User-agent: *
+Allow: /
+Allow: /images/
+Allow: /lkfinale.pdf
+
+# Disallow non-public technical paths if any
+Disallow: /node_modules/
+Disallow: /.git/
+
+# XML Sitemaps
+Sitemap: https://lkfurnitureworld1.in/sitemap.xml
