@@ -1,5 +1,5 @@
 # Robots.txt for LK Furniture World1
-# https://lkfurnitureworld1.in/
+# https://www.lkfurnitureworld1.in/
 
 User-agent: *
 Allow: /
@@ -11,4 +11,5 @@ Disallow: /node_modules/
 Disallow: /.git/
 
 # XML Sitemaps
+Sitemap: https://www.lkfurnitureworld1.in/sitemap.xml
 Sitemap: https://lkfurnitureworld1.in/sitemap.xml
