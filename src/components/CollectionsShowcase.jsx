@@ -4,7 +4,8 @@ import { ArrowRight, Armchair, Layout, Monitor, Sofa, GraduationCap, Wine, BedDo
 const VIDEO_COUNT_MAP = {
   'boss-chairs': 1,
   'waiting-chairs': 1,
-  'office-workstation': 2,
+  'office-workstation': 1,
+  'cafeteria-chairs': 1,
   'lounge': 1,
   'school-desks': 3,
   'writing-pad-chairs': 1,

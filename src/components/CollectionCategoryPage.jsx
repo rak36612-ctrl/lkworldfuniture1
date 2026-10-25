@@ -171,21 +171,12 @@ const officeWorkstationCollection = {
   videos: [
     {
       id: 'vid_ow1',
-      src: '/videos/office-workstation/WORKSTATIONCHAIRS.mp4',
-      poster: '/videos/thumbnails/WORKSTATIONCHAIRS.jpg',
-      title: 'Ergonomic Office Mesh Workstation Chairs (Showcase 1)',
-      description: 'High-tensile breathable mesh backrest, contoured lumbar support, and pneumatic gas lift factory demonstration.',
-      duration: '0:19',
-      tag: 'Ergonomic Task'
-    },
-    {
-      id: 'vid_ow2',
       src: '/videos/office-workstation/WORKSTATIONCHAIRS2.mp4',
       poster: '/videos/thumbnails/WORKSTATIONCHAIRS2.jpg',
-      title: 'Multi-Functional Task & Computer Seating (Showcase 2)',
-      description: 'Synchronized tilt mechanism, 3D armrests, and durable nylon castor base inspected at our Bengaluru facility.',
+      title: 'Ergonomic Office Mesh Workstation Chairs',
+      description: 'High-tensile breathable mesh backrest, contoured lumbar support, synchronized tilt mechanism, and durable nylon castor base inspected at our Bengaluru facility.',
       duration: '0:38',
-      tag: 'Factory Reel'
+      tag: 'Ergonomic Task'
     }
   ],
   sections: [
@@ -295,7 +286,17 @@ const schoolDesksCollection = {
 
 const cafeteriaChairsCollection = {
   title: 'CAFETERIA CHAIRS',
-  videos: [],
+  videos: [
+    {
+      id: 'vid_cc1',
+      src: '/videos/cafeteria-chairs/CAFETERIACHAIRS.mp4',
+      poster: '/videos/thumbnails/CAFETERIACHAIRS.jpg',
+      title: 'Commercial Cafeteria & Dining Shell Chairs',
+      description: 'Ergonomic high-density molded shells, heavy-duty chrome frames, and stackable dining chairs for food courts, colleges, and cafes.',
+      duration: '0:18',
+      tag: 'Cafeteria Seating'
+    }
+  ],
   sections: [
     {
       title: 'COMMERCIAL CAFE & DINING SEATING',
