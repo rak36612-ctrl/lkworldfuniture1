@@ -1,5 +1,16 @@
 import React from 'react';
-import { ArrowRight, Armchair, Layout, Monitor, Sofa, GraduationCap, Wine, BedDouble, Utensils } from 'lucide-react';
+import { ArrowRight, Armchair, Layout, Monitor, Sofa, GraduationCap, Wine, BedDouble, Utensils, Play } from 'lucide-react';
+
+const VIDEO_COUNT_MAP = {
+  'boss-chairs': 1,
+  'waiting-chairs': 1,
+  'office-workstation': 2,
+  'lounge': 1,
+  'school-desks': 3,
+  'writing-pad-chairs': 1,
+  'bunker-cot-beds': 1,
+  'restaurant-tables': 1
+};
 
 const CATEGORY_CARDS = [
   {
@@ -224,9 +235,31 @@ export default function CollectionsShowcase({ onSelectCategory }) {
                     fontWeight: '600',
                     color: '#FFFFFF',
                     lineHeight: 1.2,
-                    marginBottom: '0.2rem'
+                    marginBottom: '0.2rem',
+                    display: 'flex',
+                    alignItems: 'center',
+                    flexWrap: 'wrap',
+                    gap: '0.5rem'
                   }}>
-                    {card.title}
+                    <span>{card.title}</span>
+                    {VIDEO_COUNT_MAP[card.key] && (
+                      <span style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '0.3rem',
+                        background: 'rgba(197, 160, 117, 0.22)',
+                        border: '1px solid rgba(197, 160, 117, 0.5)',
+                        color: '#C5A075',
+                        fontSize: '0.65rem',
+                        fontWeight: '800',
+                        padding: '0.15rem 0.5rem',
+                        borderRadius: '999px',
+                        letterSpacing: '0.04em'
+                      }}>
+                        <Play size={9} fill="#C5A075" color="#C5A075" />
+                        {VIDEO_COUNT_MAP[card.key]} VIDEO{VIDEO_COUNT_MAP[card.key] > 1 ? 'S' : ''}
+                      </span>
+                    )}
                   </h3>
                   <p style={{
                     fontSize: '0.82rem',

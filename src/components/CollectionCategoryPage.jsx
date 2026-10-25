@@ -1,8 +1,9 @@
-import React from 'react';
-import { ArrowRight, BookOpen } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { ArrowRight, BookOpen, Images, Film, Play, MessageCircle } from 'lucide-react';
 
 const executiveChairsCollection = {
   title: 'EXECUTIVE CHAIRS',
+  videos: [],
   sections: [
     {
       title: 'EXECUTIVE SEATING',
@@ -23,6 +24,17 @@ const executiveChairsCollection = {
 
 const bossChairsCollection = {
   title: 'BOSS CHAIRS',
+  videos: [
+    {
+      id: 'vid_bc1',
+      src: '/videos/boss-chairs/BOSSCHAIRS.mp4',
+      poster: '/videos/thumbnails/BOSSCHAIRS.jpg',
+      title: 'Luxury Boss & Executive Command Seating',
+      description: 'High-back ergonomic recline, plush leatherette finish, and synchronized tilt mechanism tested in our workshop.',
+      duration: '0:18',
+      tag: 'HD Workshop Video'
+    }
+  ],
   sections: [
     {
       title: 'PREMIUM BOSS & COMMAND SEATING',
@@ -50,6 +62,7 @@ const bossChairsCollection = {
 
 const visitorChairsCollection = {
   title: 'VISITOR CHAIRS',
+  videos: [],
   sections: [
     {
       title: 'VISITOR & GUEST SEATING',
@@ -68,6 +81,17 @@ const visitorChairsCollection = {
 
 const waitingChairsCollection = {
   title: 'WAITING CHAIRS',
+  videos: [
+    {
+      id: 'vid_wc1',
+      src: '/videos/waiting-chairs/WAITINGCHAIRS.mp4',
+      poster: '/videos/thumbnails/WAITINGCHAIRS.jpg',
+      title: 'Heavy-Duty 3-Seater Steel Waiting Bench',
+      description: 'Commercial perforated steel airport, clinic, and lobby waiting bench demonstration with reinforced chrome armrests.',
+      duration: '0:34',
+      tag: 'Heavy-Duty Steel'
+    }
+  ],
   sections: [
     {
       title: 'PUBLIC & LOBBY WAITING SEATING',
@@ -84,6 +108,7 @@ const waitingChairsCollection = {
 
 const boardstationChairsCollection = {
   title: 'BOARDSTATION CHAIRS',
+  videos: [],
   sections: [
     {
       title: 'BOARDSTATION & BOARDROOM SEATING',
@@ -105,6 +130,7 @@ const boardstationChairsCollection = {
 
 const barstoolCollection = {
   title: 'BAR STOOLS',
+  videos: [],
   sections: [
     {
       title: 'BAR STOOLS',
@@ -142,6 +168,26 @@ const barstoolCollection = {
 
 const officeWorkstationCollection = {
   title: 'OFFICE / WORKSTATION CHAIRS',
+  videos: [
+    {
+      id: 'vid_ow1',
+      src: '/videos/office-workstation/WORKSTATIONCHAIRS.mp4',
+      poster: '/videos/thumbnails/WORKSTATIONCHAIRS.jpg',
+      title: 'Ergonomic Office Mesh Workstation Chairs (Showcase 1)',
+      description: 'High-tensile breathable mesh backrest, contoured lumbar support, and pneumatic gas lift factory demonstration.',
+      duration: '0:19',
+      tag: 'Ergonomic Task'
+    },
+    {
+      id: 'vid_ow2',
+      src: '/videos/office-workstation/WORKSTATIONCHAIRS2.mp4',
+      poster: '/videos/thumbnails/WORKSTATIONCHAIRS2.jpg',
+      title: 'Multi-Functional Task & Computer Seating (Showcase 2)',
+      description: 'Synchronized tilt mechanism, 3D armrests, and durable nylon castor base inspected at our Bengaluru facility.',
+      duration: '0:38',
+      tag: 'Factory Reel'
+    }
+  ],
   sections: [
     {
       title: 'ERGONOMIC OFFICE & WORKSTATION SEATING',
@@ -161,6 +207,17 @@ const officeWorkstationCollection = {
 
 const loungeCollection = {
   title: 'LOUNGE CHAIRS',
+  videos: [
+    {
+      id: 'vid_lc1',
+      src: '/videos/lounge/LOUNGECHAIRS.mp4',
+      poster: '/videos/thumbnails/LOUNGECHAIRS.jpg',
+      title: 'Designer Lounge & Reception Armchairs',
+      description: 'Handcrafted plush upholstery, premium velvet textures, and solid hardwood frame showcase for hotels and executive lobbies.',
+      duration: '0:11',
+      tag: 'Luxury Lounge'
+    }
+  ],
   sections: [
     {
       title: 'LUXURY LOUNGE & RECEPTION CHAIRS',
@@ -190,6 +247,35 @@ const loungeCollection = {
 
 const schoolDesksCollection = {
   title: 'SCHOOL DESKS',
+  videos: [
+    {
+      id: 'vid_sd1',
+      src: '/videos/school-desks/SCHOOLDESK.mp4',
+      poster: '/videos/thumbnails/SCHOOLDESK.jpg',
+      title: 'Heavy-Duty Dual Student Desk & Bench (Model 1)',
+      description: 'CRCA steel tubular frame with pre-laminated board top, integrated book rack, and ergonomic backrest built for schools.',
+      duration: '0:30',
+      tag: 'Classroom Desk 1'
+    },
+    {
+      id: 'vid_sd2',
+      src: '/videos/school-desks/SCHOOLDESK2.mp4',
+      poster: '/videos/thumbnails/SCHOOLDESK2.jpg',
+      title: 'Institutional Classroom Desk Batch Inspection (Model 2)',
+      description: 'Close-up build quality demonstration showing welded joints, scratch-resistant edges, and student durability.',
+      duration: '0:32',
+      tag: 'Classroom Desk 2'
+    },
+    {
+      id: 'vid_sd3',
+      src: '/videos/school-desks/SCHOOLDESK3.mp4',
+      poster: '/videos/thumbnails/SCHOOLDESK3.jpg',
+      title: 'Bulk Institutional School Furniture Batch (Model 3)',
+      description: 'Full workshop view of multi-seater classroom desks ready for school and college delivery across Karnataka.',
+      duration: '0:37',
+      tag: 'Classroom Desk 3'
+    }
+  ],
   sections: [
     {
       title: 'CLASSROOM & INSTITUTIONAL DESKS',
@@ -209,6 +295,7 @@ const schoolDesksCollection = {
 
 const cafeteriaChairsCollection = {
   title: 'CAFETERIA CHAIRS',
+  videos: [],
   sections: [
     {
       title: 'COMMERCIAL CAFE & DINING SEATING',
@@ -235,6 +322,17 @@ const cafeteriaChairsCollection = {
 
 const writingPadChairsCollection = {
   title: 'WRITING PAD CHAIRS',
+  videos: [
+    {
+      id: 'vid_wp1',
+      src: '/videos/writing-pad-chairs/WRITINGPADCHAIR.mp4',
+      poster: '/videos/thumbnails/WRITINGPADCHAIR.jpg',
+      title: 'Training Room & Lecture Writing Pad Chairs',
+      description: 'Folding writing tablet chair with integrated wire book tray and high-strength metal frame for coaching centers and colleges.',
+      duration: '0:57',
+      tag: 'Lecture Hall Seating'
+    }
+  ],
   sections: [
     {
       title: 'TRAINING & SEMINAR SEATING',
@@ -252,6 +350,17 @@ const writingPadChairsCollection = {
 
 const bunkerCotBedsCollection = {
   title: 'BUNKER COT BEDS',
+  videos: [
+    {
+      id: 'vid_bb1',
+      src: '/videos/bunker-cot-beds/BUNKERCOT.mp4',
+      poster: '/videos/thumbnails/BUNKERCOT.jpg',
+      title: 'Heavy-Duty Steel Bunker Cot Bed',
+      description: 'Two-tier industrial strength bunk bed with reinforced ladder, safety guardrails, and anti-rust epoxy powder coating.',
+      duration: '0:15',
+      tag: 'Hostel & PG Beds'
+    }
+  ],
   sections: [
     {
       title: 'COMMERCIAL HEAVY-DUTY BUNK BEDS',
@@ -272,6 +381,17 @@ const bunkerCotBedsCollection = {
 
 const restaurantTablesCollection = {
   title: 'RESTAURANT TABLES',
+  videos: [
+    {
+      id: 'vid_rt1',
+      src: '/videos/restaurant-tables/TABLESHOTELS.mp4',
+      poster: '/videos/thumbnails/TABLESHOTELS.jpg',
+      title: 'Commercial Restaurant & Hotel Dining Tables',
+      description: 'High-durability solid hardwood tops paired with heavy powder-coated cast-iron bases for cafes and restaurants.',
+      duration: '0:14',
+      tag: 'Hotel & Cafe Tables'
+    }
+  ],
   sections: [
     {
       title: 'COMMERCIAL DINING & RESTAURANT TABLES',
@@ -367,18 +487,247 @@ const CATEGORIES_DATA = {
   cafeteria: cafeteriaChairsCollection
 };
 
+// Reusable luxury video card component
+function VideoCard({ video, categoryTitle }) {
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const togglePlay = () => {
+    if (!videoRef.current) return;
+    if (videoRef.current.paused) {
+      // Pause all other video elements on the page
+      document.querySelectorAll('video').forEach((el) => {
+        if (el !== videoRef.current) el.pause();
+      });
+      videoRef.current.play().catch(() => {});
+      setIsPlaying(true);
+    } else {
+      videoRef.current.pause();
+      setIsPlaying(false);
+    }
+  };
+
+  const handleVideoEnded = () => {
+    setIsPlaying(false);
+  };
+
+  const whatsappMsg = `Hi LK Furniture World1, I watched your video demonstration for "${video.title}" in ${categoryTitle}. Please share pricing, bulk orders, and custom options.`;
+  const whatsappUrl = `https://wa.me/918884487020?text=${encodeURIComponent(whatsappMsg)}`;
+
+  return (
+    <div
+      style={{
+        background: '#FFFFFF',
+        borderRadius: '24px',
+        border: '1px solid rgba(24, 59, 53, 0.08)',
+        boxShadow: '0 8px 30px rgba(24, 59, 53, 0.06)',
+        display: 'flex',
+        flexDirection: 'column',
+        overflow: 'hidden',
+        transition: 'transform 0.35s ease, box-shadow 0.35s ease'
+      }}
+      className="promax-card-wrap video-card-container"
+    >
+      {/* Video Frame (Vertical 9:16 portrait style, matching workshop video recording) */}
+      <div
+        style={{
+          position: 'relative',
+          background: '#0B1B18',
+          width: '100%',
+          aspectRatio: '9 / 16',
+          maxHeight: '520px',
+          overflow: 'hidden',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
+        }}
+      >
+        <video
+          ref={videoRef}
+          src={video.src}
+          poster={video.poster}
+          playsInline
+          controls
+          onPlay={() => {
+            document.querySelectorAll('video').forEach((el) => {
+              if (el !== videoRef.current) el.pause();
+            });
+            setIsPlaying(true);
+          }}
+          onPause={() => setIsPlaying(false)}
+          onEnded={handleVideoEnded}
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'contain',
+            display: 'block'
+          }}
+        />
+
+        {/* Custom Play Overlay Button (visible when paused) */}
+        {!isPlaying && (
+          <button
+            onClick={togglePlay}
+            aria-label={`Play ${video.title}`}
+            style={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              width: '64px',
+              height: '64px',
+              borderRadius: '50%',
+              background: 'rgba(24, 59, 53, 0.88)',
+              border: '2px solid rgba(197, 160, 117, 0.85)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              boxShadow: '0 8px 24px rgba(0,0,0,0.4)',
+              backdropFilter: 'blur(8px)',
+              cursor: 'pointer',
+              zIndex: 3,
+              transition: 'transform 0.25s ease, background 0.25s ease'
+            }}
+            className="video-play-btn"
+          >
+            <Play size={26} color="#C5A075" fill="#C5A075" style={{ marginLeft: '3px' }} />
+          </button>
+        )}
+
+        {/* Floating Badges */}
+        <div
+          style={{
+            position: 'absolute',
+            top: '1rem',
+            left: '1rem',
+            right: '1rem',
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            pointerEvents: 'none',
+            zIndex: 2
+          }}
+        >
+          {video.tag && (
+            <span
+              style={{
+                background: 'rgba(24, 59, 53, 0.9)',
+                color: '#C5A075',
+                fontSize: '0.72rem',
+                fontWeight: '800',
+                padding: '0.35rem 0.75rem',
+                borderRadius: '999px',
+                backdropFilter: 'blur(6px)',
+                letterSpacing: '0.04em',
+                border: '1px solid rgba(197, 160, 117, 0.3)'
+              }}
+            >
+              {video.tag}
+            </span>
+          )}
+
+          {video.duration && (
+            <span
+              style={{
+                background: 'rgba(0, 0, 0, 0.7)',
+                color: '#FFFFFF',
+                fontSize: '0.72rem',
+                fontWeight: '700',
+                padding: '0.3rem 0.65rem',
+                borderRadius: '999px',
+                backdropFilter: 'blur(6px)'
+              }}
+            >
+              {video.duration}
+            </span>
+          )}
+        </div>
+      </div>
+
+      {/* Video Details & CTA */}
+      <div style={{ padding: '1.4rem', display: 'flex', flexDirection: 'column', flex: 1, justifyContent: 'space-between' }}>
+        <div>
+          <h3
+            style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: '1.1rem',
+              fontWeight: '800',
+              color: '#183B35',
+              lineHeight: 1.35,
+              margin: '0 0 0.5rem 0'
+            }}
+          >
+            {video.title}
+          </h3>
+          <p
+            style={{
+              fontSize: '0.86rem',
+              color: '#556864',
+              lineHeight: 1.55,
+              margin: '0 0 1.25rem 0'
+            }}
+          >
+            {video.description}
+          </p>
+        </div>
+
+        {/* Direct WhatsApp Inquiry */}
+        <a
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '0.65rem',
+            width: '100%',
+            padding: '0.85rem 1.1rem',
+            background: '#183B35',
+            color: '#FFFFFF',
+            textDecoration: 'none',
+            borderRadius: '12px',
+            fontSize: '0.88rem',
+            fontWeight: '700',
+            letterSpacing: '0.02em',
+            transition: 'all 0.25s ease',
+            boxShadow: '0 4px 14px rgba(24, 59, 53, 0.12)'
+          }}
+          className="video-inquire-btn"
+        >
+          <MessageCircle size={17} color="#25D366" />
+          <span>Inquire on WhatsApp</span>
+          <ArrowRight size={15} color="#C5A075" />
+        </a>
+      </div>
+    </div>
+  );
+}
+
 export default function CollectionCategoryPage({ categoryKey, onNavigateBack }) {
   const normalizedKey = (categoryKey || '').toLowerCase().trim();
   const category = CATEGORIES_DATA[normalizedKey] || CATEGORIES_DATA['executive-chairs'];
+  const [activeTab, setActiveTab] = useState('photos');
+
+  // Reset tab to photos whenever active category changes
+  useEffect(() => {
+    setActiveTab('photos');
+  }, [categoryKey]);
+
+  const totalPhotos = (category.sections || []).reduce(
+    (acc, sec) => acc + (sec.items ? sec.items.length : 0),
+    0
+  );
+  const categoryVideos = category.videos || [];
 
   return (
-    <div style={{ background: '#FFFFFF', minHeight: '100vh', paddingBottom: '1.5rem', paddingTop: '2rem' }}>
+    <div style={{ background: '#FFFFFF', minHeight: '100vh', paddingBottom: '3.5rem', paddingTop: '2rem' }}>
       <div className="container">
         
-        {/* Top Header — Clean title, no product count indicator */}
+        {/* Top Header — Clean title */}
         <div style={{
           marginTop: '1.5rem',
-          marginBottom: '3.5rem',
+          marginBottom: '2rem',
           borderBottom: '1px solid rgba(24, 59, 53, 0.1)',
           paddingBottom: '1.5rem'
         }}>
@@ -398,120 +747,461 @@ export default function CollectionCategoryPage({ categoryKey, onNavigateBack }) 
           </h1>
         </div>
 
-        {/* Render Each Section */}
-        {category.sections.map((section, idx) => (
-          <div key={idx} style={{ marginBottom: '4.5rem' }}>
-            
-            {section.title && (
-              <div style={{
-                fontSize: '1.2rem',
-                fontFamily: 'var(--font-heading)',
-                fontWeight: '800',
-                color: '#183B35',
-                letterSpacing: '0.08em',
-                marginBottom: '2rem',
-                display: 'flex',
+        {/* Gallery Navigation Tabs Bar */}
+        <div style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          gap: '1rem',
+          marginBottom: '2.5rem',
+          borderBottom: '1px solid rgba(24, 59, 53, 0.08)',
+          paddingBottom: '1.25rem'
+        }}>
+          {/* Pill Switcher */}
+          <div style={{
+            display: 'inline-flex',
+            background: '#F0F4F2',
+            padding: '0.35rem',
+            borderRadius: '999px',
+            gap: '0.35rem'
+          }}>
+            <button
+              onClick={() => setActiveTab('photos')}
+              style={{
+                display: 'inline-flex',
                 alignItems: 'center',
-                gap: '0.75rem',
-                borderBottom: '2px solid #C5A075',
-                paddingBottom: '0.5rem',
-                maxWidth: '380px'
+                gap: '0.6rem',
+                padding: '0.65rem 1.35rem',
+                borderRadius: '999px',
+                border: 'none',
+                background: activeTab === 'photos' ? '#183B35' : 'transparent',
+                color: activeTab === 'photos' ? '#FFFFFF' : '#183B35',
+                fontWeight: '700',
+                fontSize: '0.9rem',
+                cursor: 'pointer',
+                transition: 'all 0.25s ease'
+              }}
+              className="gallery-tab-btn"
+            >
+              <Images size={17} />
+              <span>Photo Gallery</span>
+              <span style={{
+                background: activeTab === 'photos' ? 'rgba(255,255,255,0.22)' : 'rgba(24,59,53,0.1)',
+                color: activeTab === 'photos' ? '#FFFFFF' : '#183B35',
+                padding: '0.15rem 0.55rem',
+                borderRadius: '999px',
+                fontSize: '0.74rem',
+                fontWeight: '800'
               }}>
-                {section.title}
-              </div>
-            )}
+                {totalPhotos}
+              </span>
+            </button>
 
-            {/* 3 Cards Each Row Grid */}
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(290px, 1fr))',
-              gap: '2rem'
-            }}>
-              {section.items.map((item) => (
-                <a
-                  key={item.id}
-                  href={`https://wa.me/918884487020?text=Hi%20LK%20Furniture%20World1%2C%20I%20am%20interested%20in%20an%20item%20from%3A%20${encodeURIComponent(category.title)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    textDecoration: 'none',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    cursor: 'pointer'
-                  }}
-                  className="promax-card-wrap"
-                >
-                  {/* Soft Rounded Off-White Card (border-radius: 28px, background: #F0F4F2) */}
-                  <div style={{
-                    background: '#F0F4F2',
-                    borderRadius: '28px',
-                    height: '360px',
-                    padding: '1.75rem',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    boxShadow: '0 4px 20px rgba(24, 59, 53, 0.04)',
-                    transition: 'transform 0.35s ease, boxShadow 0.35s ease',
-                    position: 'relative',
-                    overflow: 'hidden'
-                  }} className="promax-card-bg">
-                    
-                    {/* Full Product Image — 100% full view without cropping! */}
-                    <img 
-                      src={item.image} 
-                      alt={category.title}
-                      style={{
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'contain',
-                        display: 'block',
-                        transition: 'transform 0.4s ease'
-                      }}
-                      className="promax-img-zoom"
-                    />
+            <button
+              onClick={() => setActiveTab('videos')}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.6rem',
+                padding: '0.65rem 1.35rem',
+                borderRadius: '999px',
+                border: 'none',
+                background: activeTab === 'videos' ? '#183B35' : 'transparent',
+                color: activeTab === 'videos' ? '#FFFFFF' : '#183B35',
+                fontWeight: '700',
+                fontSize: '0.9rem',
+                cursor: 'pointer',
+                transition: 'all 0.25s ease'
+              }}
+              className="gallery-tab-btn"
+            >
+              <Film size={17} />
+              <span>Video Gallery</span>
+              <span style={{
+                background: categoryVideos.length > 0 ? '#C5A075' : (activeTab === 'videos' ? 'rgba(255,255,255,0.22)' : 'rgba(24,59,53,0.1)'),
+                color: categoryVideos.length > 0 ? '#102824' : (activeTab === 'videos' ? '#FFFFFF' : '#183B35'),
+                padding: '0.15rem 0.55rem',
+                borderRadius: '999px',
+                fontSize: '0.74rem',
+                fontWeight: '800'
+              }}>
+                {categoryVideos.length}
+              </span>
+            </button>
+          </div>
 
-                    {/* Spec Tag */}
-                    {item.tag && (
-                      <span style={{
-                        position: 'absolute',
-                        top: '1.25rem',
-                        left: '1.25rem',
-                        background: 'rgba(24, 59, 53, 0.9)',
-                        color: '#FFFFFF',
-                        fontSize: '0.72rem',
-                        fontWeight: '700',
-                        padding: '0.35rem 0.75rem',
-                        borderRadius: '999px',
-                        backdropFilter: 'blur(6px)'
-                      }}>
-                        {item.tag}
-                      </span>
-                    )}
+          {/* Quick Video Highlight banner link when user is browsing photos */}
+          {activeTab === 'photos' && categoryVideos.length > 0 && (
+            <button
+              onClick={() => setActiveTab('videos')}
+              style={{
+                background: 'rgba(197, 160, 117, 0.12)',
+                border: '1px solid rgba(197, 160, 117, 0.4)',
+                color: '#9C7A45',
+                padding: '0.55rem 1.15rem',
+                borderRadius: '999px',
+                fontSize: '0.84rem',
+                fontWeight: '700',
+                cursor: 'pointer',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.55rem',
+                transition: 'all 0.25s ease'
+              }}
+              className="video-pill-link"
+            >
+              <Play size={14} fill="#C5A075" color="#C5A075" />
+              <span>Watch {categoryVideos.length} Workshop Video{categoryVideos.length > 1 ? 's' : ''}</span>
+              <ArrowRight size={14} />
+            </button>
+          )}
 
-                    {/* Circular Action Arrow Button */}
-                    <div style={{
-                      position: 'absolute',
-                      bottom: '1.25rem',
-                      right: '1.25rem',
-                      width: '42px',
-                      height: '42px',
+          {activeTab === 'videos' && (
+            <button
+              onClick={() => setActiveTab('photos')}
+              style={{
+                background: 'rgba(24, 59, 53, 0.06)',
+                border: '1px solid rgba(24, 59, 53, 0.15)',
+                color: '#183B35',
+                padding: '0.55rem 1.15rem',
+                borderRadius: '999px',
+                fontSize: '0.84rem',
+                fontWeight: '700',
+                cursor: 'pointer',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.55rem',
+                transition: 'all 0.25s ease'
+              }}
+            >
+              <Images size={15} />
+              <span>Switch to Photo Gallery</span>
+            </button>
+          )}
+        </div>
+
+        {/* TAB 1: PHOTO GALLERY */}
+        {activeTab === 'photos' && (
+          <div>
+            {/* Live Video Discovery Banner if videos exist for this collection */}
+            {categoryVideos.length > 0 && (
+              <div
+                style={{
+                  background: 'linear-gradient(135deg, rgba(24, 59, 53, 0.05) 0%, rgba(197, 160, 117, 0.14) 100%)',
+                  border: '1px solid rgba(197, 160, 117, 0.35)',
+                  borderRadius: '20px',
+                  padding: '1.2rem 1.6rem',
+                  marginBottom: '3rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  flexWrap: 'wrap',
+                  gap: '1rem'
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                  <div
+                    style={{
+                      width: '44px',
+                      height: '44px',
                       borderRadius: '50%',
-                      background: '#FFFFFF',
-                      boxShadow: '0 4px 14px rgba(24, 59, 53, 0.12)',
+                      background: '#C5A075',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      transition: 'transform 0.25s ease, background 0.25s ease'
-                    }} className="card-arrow-circle">
-                      <ArrowRight size={20} color="#C5A075" />
+                      flexShrink: 0,
+                      boxShadow: '0 4px 12px rgba(197, 160, 117, 0.35)'
+                    }}
+                  >
+                    <Film size={22} color="#183B35" />
+                  </div>
+                  <div>
+                    <div style={{ fontWeight: '800', color: '#183B35', fontSize: '0.98rem' }}>
+                      Live Workshop Video Showcase Available
+                    </div>
+                    <div style={{ fontSize: '0.84rem', color: '#556864' }}>
+                      Watch {categoryVideos.length} authentic factory demonstration video{categoryVideos.length > 1 ? 's' : ''} for {category.title} directly from our Bengaluru workshop.
                     </div>
                   </div>
-                </a>
-              ))}
-            </div>
+                </div>
 
+                <button
+                  onClick={() => setActiveTab('videos')}
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.55rem',
+                    padding: '0.7rem 1.4rem',
+                    background: '#183B35',
+                    color: '#FFFFFF',
+                    border: 'none',
+                    borderRadius: '999px',
+                    fontWeight: '700',
+                    fontSize: '0.86rem',
+                    cursor: 'pointer',
+                    boxShadow: '0 4px 14px rgba(24, 59, 53, 0.2)',
+                    transition: 'all 0.25s ease'
+                  }}
+                  className="btn-gold-hover"
+                >
+                  <Play size={14} fill="#C5A075" color="#C5A075" />
+                  <span>Open Video Gallery ({categoryVideos.length})</span>
+                  <ArrowRight size={15} />
+                </button>
+              </div>
+            )}
+
+            {/* Render Each Section */}
+            {category.sections.map((section, idx) => (
+              <div key={idx} style={{ marginBottom: '4.5rem' }}>
+                
+                {section.title && (
+                  <div style={{
+                    fontSize: '1.2rem',
+                    fontFamily: 'var(--font-heading)',
+                    fontWeight: '800',
+                    color: '#183B35',
+                    letterSpacing: '0.08em',
+                    marginBottom: '2rem',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.75rem',
+                    borderBottom: '2px solid #C5A075',
+                    paddingBottom: '0.5rem',
+                    maxWidth: '380px'
+                  }}>
+                    {section.title}
+                  </div>
+                )}
+
+                {/* 3 Cards Each Row Grid */}
+                <div style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(290px, 1fr))',
+                  gap: '2rem'
+                }}>
+                  {section.items.map((item) => (
+                    <a
+                      key={item.id}
+                      href={`https://wa.me/918884487020?text=Hi%20LK%20Furniture%20World1%2C%20I%20am%20interested%20in%20an%20item%20from%3A%20${encodeURIComponent(category.title)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        textDecoration: 'none',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        cursor: 'pointer'
+                      }}
+                      className="promax-card-wrap"
+                    >
+                      {/* Soft Rounded Off-White Card (border-radius: 28px, background: #F0F4F2) */}
+                      <div style={{
+                        background: '#F0F4F2',
+                        borderRadius: '28px',
+                        height: '360px',
+                        padding: '1.75rem',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        boxShadow: '0 4px 20px rgba(24, 59, 53, 0.04)',
+                        transition: 'transform 0.35s ease, boxShadow 0.35s ease',
+                        position: 'relative',
+                        overflow: 'hidden'
+                      }} className="promax-card-bg">
+                        
+                        {/* Full Product Image — 100% full view without cropping */}
+                        <img 
+                          src={item.image} 
+                          alt={category.title}
+                          style={{
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'contain',
+                            display: 'block',
+                            transition: 'transform 0.4s ease'
+                          }}
+                          className="promax-img-zoom"
+                        />
+
+                        {/* Spec Tag */}
+                        {item.tag && (
+                          <span style={{
+                            position: 'absolute',
+                            top: '1.25rem',
+                            left: '1.25rem',
+                            background: 'rgba(24, 59, 53, 0.9)',
+                            color: '#FFFFFF',
+                            fontSize: '0.72rem',
+                            fontWeight: '700',
+                            padding: '0.35rem 0.75rem',
+                            borderRadius: '999px',
+                            backdropFilter: 'blur(6px)'
+                          }}>
+                            {item.tag}
+                          </span>
+                        )}
+
+                        {/* Circular Action Arrow Button */}
+                        <div style={{
+                          position: 'absolute',
+                          bottom: '1.25rem',
+                          right: '1.25rem',
+                          width: '42px',
+                          height: '42px',
+                          borderRadius: '50%',
+                          background: '#FFFFFF',
+                          boxShadow: '0 4px 14px rgba(24, 59, 53, 0.12)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          transition: 'transform 0.25s ease, background 0.25s ease'
+                        }} className="card-arrow-circle">
+                          <ArrowRight size={20} color="#C5A075" />
+                        </div>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+
+              </div>
+            ))}
           </div>
-        ))}
+        )}
+
+        {/* TAB 2: VIDEO GALLERY */}
+        {activeTab === 'videos' && (
+          <div>
+            {categoryVideos.length > 0 ? (
+              <div style={{ marginBottom: '4.5rem' }}>
+                <div style={{
+                  fontSize: '1.2rem',
+                  fontFamily: 'var(--font-heading)',
+                  fontWeight: '800',
+                  color: '#183B35',
+                  letterSpacing: '0.08em',
+                  marginBottom: '2rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.75rem',
+                  borderBottom: '2px solid #C5A075',
+                  paddingBottom: '0.5rem',
+                  maxWidth: '380px'
+                }}>
+                  LIVE WORKSHOP SHOWCASE
+                </div>
+
+                {/* Video Cards Grid */}
+                <div style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(290px, 1fr))',
+                  gap: '2rem'
+                }}>
+                  {categoryVideos.map((video) => (
+                    <VideoCard key={video.id} video={video} categoryTitle={category.title} />
+                  ))}
+                </div>
+              </div>
+            ) : (
+              /* Graceful Empty State for categories without video yet */
+              <div
+                style={{
+                  background: '#F0F4F2',
+                  borderRadius: '28px',
+                  padding: '4rem 2rem',
+                  textAlign: 'center',
+                  maxWidth: '680px',
+                  margin: '2rem auto 4.5rem auto',
+                  border: '1px dashed rgba(197, 160, 117, 0.45)'
+                }}
+              >
+                <div
+                  style={{
+                    width: '74px',
+                    height: '74px',
+                    borderRadius: '50%',
+                    background: '#FFFFFF',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    margin: '0 auto 1.5rem auto',
+                    boxShadow: '0 8px 24px rgba(24, 59, 53, 0.08)'
+                  }}
+                >
+                  <Film size={34} color="#C5A075" />
+                </div>
+
+                <h3
+                  style={{
+                    fontFamily: 'var(--font-heading)',
+                    fontSize: '1.6rem',
+                    fontWeight: '800',
+                    color: '#183B35',
+                    marginBottom: '0.75rem'
+                  }}
+                >
+                  Showroom Video Being Prepared
+                </h3>
+
+                <p
+                  style={{
+                    fontSize: '0.95rem',
+                    color: '#556864',
+                    lineHeight: 1.6,
+                    maxWidth: '480px',
+                    margin: '0 auto 2rem auto'
+                  }}
+                >
+                  We are filming fresh workshop walkthroughs and quality inspections for our {category.title} collection at our Mysore Road, Bengaluru factory.
+                </p>
+
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'center' }}>
+                  <a
+                    href={`https://wa.me/918884487020?text=Hi%20LK%20Furniture%20World1%2C%20please%20share%20live%20videos%20or%20photos%20for%20${encodeURIComponent(category.title)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.65rem',
+                      padding: '0.9rem 1.8rem',
+                      background: '#183B35',
+                      color: '#FFFFFF',
+                      borderRadius: '999px',
+                      fontWeight: '700',
+                      fontSize: '0.9rem',
+                      textDecoration: 'none',
+                      boxShadow: '0 6px 20px rgba(24, 59, 53, 0.15)'
+                    }}
+                  >
+                    <MessageCircle size={18} color="#25D366" />
+                    <span>Request Live Video on WhatsApp</span>
+                  </a>
+
+                  <button
+                    onClick={() => setActiveTab('photos')}
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.55rem',
+                      padding: '0.9rem 1.8rem',
+                      background: '#FFFFFF',
+                      color: '#183B35',
+                      border: '1px solid rgba(24, 59, 53, 0.15)',
+                      borderRadius: '999px',
+                      fontWeight: '700',
+                      fontSize: '0.9rem',
+                      cursor: 'pointer'
+                    }}
+                  >
+                    <Images size={17} />
+                    <span>Browse Photo Gallery ({totalPhotos})</span>
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
 
         {/* AT LAST: VIEW ENTIRE CATALOGUE BUTTON */}
         <div style={{ textAlign: 'center', paddingTop: '2.5rem', borderTop: '1px solid rgba(24, 59, 53, 0.1)' }}>
@@ -553,6 +1243,40 @@ export default function CollectionCategoryPage({ categoryKey, onNavigateBack }) 
           transform: scale(1.1);
         }
         .promax-card-wrap:hover .card-arrow-circle svg {
+          stroke: #FFFFFF !important;
+        }
+        .video-card-container:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 18px 44px rgba(24, 59, 53, 0.12) !important;
+        }
+        .video-card-container:hover .video-play-btn {
+          transform: translate(-50%, -50%) scale(1.12);
+          background: #C5A075 !important;
+          border-color: #FFFFFF !important;
+        }
+        .video-card-container:hover .video-play-btn svg {
+          fill: #183B35 !important;
+          stroke: #183B35 !important;
+        }
+        .video-inquire-btn:hover {
+          background: #C5A075 !important;
+          color: #102824 !important;
+          transform: translateY(-2px);
+        }
+        .video-inquire-btn:hover svg {
+          stroke: #102824 !important;
+        }
+        .btn-gold-hover:hover {
+          background: #C5A075 !important;
+          color: #102824 !important;
+        }
+        .video-pill-link:hover {
+          background: #C5A075 !important;
+          color: #FFFFFF !important;
+          border-color: #C5A075 !important;
+        }
+        .video-pill-link:hover svg {
+          fill: #FFFFFF !important;
           stroke: #FFFFFF !important;
         }
       `}</style>
